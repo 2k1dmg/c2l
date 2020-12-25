@@ -57,6 +57,18 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ś','','ŷ','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'- Транслит 1 -': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','y','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'- Транслит 2 -': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','y','q','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 "Чешская": function(text) {
 	return text
 	.replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
