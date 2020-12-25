@@ -21,7 +21,7 @@
 #outtext {
 	background-color: whitesmoke;
 }
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
 	#container {
 		display: block;
 	}
@@ -29,15 +29,31 @@
 		width: calc(100% - 22px);
 	}
 }
+#gitlink {
+	font-weight: bold;
+	font-family: monospace;
+	text-decoration: none;
+	color: #555;
+	position: absolute;
+	top: 5pt;
+	right: 5pt;
+}
+#gitlink:hover {
+	color: #222;
+}
+#gitlink:active {
+	color: #4169e1; 
+}
 </style>
 </head>
 <body onkeyup="keyup(event)" onload="initpage()">
-<input type="button" value="Латинизировать" onclick="translit();">
-<select id="options"></select>
-<div id="container">
-<div id="intext" contenteditable="true"></div>
-<div id="outtext"></div>
-</div>
+	<input type="button" value="Латинизировать" onclick="translit();">
+	<select id="options"></select>
+	<div id="container">
+		<div id="intext" contenteditable="true"></div>
+		<div id="outtext"></div>
+		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
+	</div>
 <script>
 var translitWord = {
 '- По умолчанию -': function(text) {
