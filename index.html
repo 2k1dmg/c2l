@@ -250,11 +250,9 @@ function initpage() {
 	intext.focus();
 	
 	var alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
-	for(var opt in options) {
-		var optionValue = options[opt].value;
-		if(typeof optionValue != 'string')
-			continue;
-		options[opt].setAttribute('title', alphabet.split('').map(function(letter) {
+	for(var opt of options) {
+		var optionValue = opt.value;
+		opt.setAttribute('title', alphabet.split('').map(function(letter) {
 			return translitWord[optionValue](letter).toUpperCase();
 		}).join(' '));
 	}
