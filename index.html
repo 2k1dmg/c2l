@@ -247,6 +247,16 @@ function initpage() {
 	for(var key in translitWord)
 		options.appendChild(new Option(key,key));
 	intext.focus();
+	
+	var alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+	for(var opt in options) {
+		var optionValue = options[opt].value;
+		if(typeof optionValue != 'string')
+			continue;
+		options[opt].setAttribute('title', alphabet.split('').map(function(letter) {
+			return translitWord[optionValue](letter).toUpperCase();
+		}).join(' '));
+	}
 }
 
 function keyup(event) {
