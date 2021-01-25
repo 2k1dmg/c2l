@@ -19,6 +19,12 @@
 	outline: 0;
 	border: 1px solid #d9d9d9;
 }
+#intext:hover {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3) inset;
+}
+#intext:focus {
+	border-color: #4d90fe;
+}
 #outtext {
 	background-color: whitesmoke;
 }
@@ -45,11 +51,19 @@
 #gitlink:active {
 	color: #4169e1; 
 }
+input[value="Латинизировать"] {
+	margin-bottom: 8px;
+}
+#options {
+	height: 17pt;
+}
 </style>
 </head>
 <body onkeyup="keyup(event)" onload="initpage()">
 	<input type="button" value="Латинизировать" onclick="translit();">
 	<select id="options"></select>
+	<br />
+	<input type="button" value="Очистить форматирование" onclick="clearFormating();">
 	<div id="container">
 		<div id="intext" contenteditable="true"></div>
 		<div id="outtext"></div>
@@ -268,5 +282,9 @@ options.onchange = function(value) {
 	getTranslitWord = translitWord[selected];
 	translit();
 };
+
+function clearFormating() {
+	intext.innerHTML = intext.innerText.replace(/\r?\n/g, '<br />');
+}
 </script>
 </body></html>
