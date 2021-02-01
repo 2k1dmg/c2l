@@ -88,31 +88,31 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ś','','ŷ','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'- Транслит 1 -': function(text) {
+'- Транслит 1 - (й-j, ы-y)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','y','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'- Транслит 2 -': function(text) {
+'- Транслит 2 - (й-j, ы-y)'': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','y','q','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'- Транслит 3 -': function(text) {
+'- Транслит 3 - (й-y, ы-ī)'': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','ī','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'- Транслит 4 -': function(text) {
+'- Транслит 4 - (й-y, ы-ĭ)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','ĭ','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'- Транслит 5 -': function(text) {
+'- Транслит 5 - (й-y, ы-î)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','î','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
