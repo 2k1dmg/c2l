@@ -64,6 +64,7 @@ input[value="Латинизировать"] {
 	<select id="options"></select>
 	<br />
 	<input type="button" value="Очистить форматирование" onclick="clearFormating();">
+	<input type="button" value="Очистить" onclick="clearAll();">
 	<div id="container">
 		<div id="intext" contenteditable="true"></div>
 		<div id="outtext"></div>
@@ -279,6 +280,9 @@ function initpage() {
 			return translitWord[optionValue](letter).toUpperCase();
 		}).join(' '));
 	}
+
+	intext.innerText = 'Съешь же ещё этих мягких французских булок да выпей чаю.';
+	translit();
 }
 
 function keyup(event) {
@@ -294,6 +298,10 @@ options.onchange = function(value) {
 
 function clearFormating() {
 	intext.innerHTML = intext.innerText.replace(/\r?\n/g, '<br />');
+}
+function clearAll() {
+	intext.textContent = '';
+	outtext.textContent = '';
 }
 </script>
 </body></html>
