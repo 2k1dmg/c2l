@@ -90,6 +90,13 @@ var translitWord = {
 		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','y','j','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'- Транслит 1 ASCII - (без "ь, ъ", ый - ы)': function(text) {
+	return text
+	.replace(/(ы)й/g,"$1")
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','','y','','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 '- Транслит 2 - (й-j, ы-y, ь-q)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
