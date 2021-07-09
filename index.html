@@ -132,7 +132,7 @@ var translitWord = {
 		return p1+['uh','ah']['юя'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
-		return ['a','b','v','g','d','e','eq','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','cz','c','x','cx','w','y','q','ew','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+		return ['a','b','v','g','d','e','eq','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','cz','c','x','xc','w','y','q','ew','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
 "Чешская": function(text) {
