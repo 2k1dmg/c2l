@@ -126,6 +126,15 @@ var translitWord = {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','ç','ş','ś','ġ','y','q','ė','ų','ą']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'- Транслит ASCII 1': function(text) {
+	return text
+	.replace(/([бвгджзклмнпрстфхцчшщ])([юя])/g, function(found,p1,p2,offset,s) {
+		return p1+['uh','ah']['юя'.indexOf(p2)];
+	})
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','eq','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','cz','c','x','cx','w','y','q','ew','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 "Чешская": function(text) {
 	return text
 	.replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
