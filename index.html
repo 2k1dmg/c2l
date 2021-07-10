@@ -128,6 +128,7 @@ var translitWord = {
 },
 '- Транслит ASCII 1': function(text) {
 	return text
+	.replace(/ъ([юя])/g, '$1')
 	.replace(/([бвгджзклмнпрстфхцчшщ])([юя])/g, function(found,p1,p2,offset,s) {
 		return p1+['uh','ah']['юя'.indexOf(p2)];
 	})
