@@ -136,69 +136,48 @@ var translitWord = {
 		return ['a','b','v','g','d','e','ej','gz','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','cz','c','sh','sw','q','iw','j','ew','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-"Чешская": function(text) {
-	return text
-	.replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
-	.replace(/[бвдзлмнпрстф]ь/g,function(found,offset,s){return ["bj","vj","ď","ź","ĺ","ḿ","ń","ṕ","ŕ","ś","ť","fj"]["бьвьдьзьльмьньпьрьсьтьфь".indexOf(found)/2]})
-	.replace(/([бвгдзклмнпрстфх])(ио|иу|иа|е|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+["ïo","ïu","ïa","e","io","iu","ia"][["ио","иу","иа","е","ё","ю","я"].indexOf(p2)]})
-	.replace(/([йжцчшщ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua".charAt("еёюя".indexOf(p2))})
-	.replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","je","jo","ž","z","i","j","k","l","m","n","o","p","r","s","t","u","f","ch","c","č","š","šč","","y","","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
+"Усовершенствованная польская": function(text) {
+  return text
+  .replace(/л?[ль][иеёюя]/g,function(found,offset,s){return ["lji","lje","ljo","lju","lja","lli","lle","llo","llu","lla","li","le","lo","lu","la","ji","je","jo","ju","ja"][["льи","лье","льё","лью","лья","лли","лле","ллё","ллю","лля","ли","ле","лё","лю","ля","ьи","ье","ьё","ью","ья"].indexOf(found)]})
+  .replace(/[бвдзлмнпрстф]ь/g,function(found,offset,s){return ["bẃ","ẃ","dź","ź","l","ḿ","ń","ṕ","ŕ","ś","ć","ff"]["бьвьдьзьльмьньпьрьсьтьфь".indexOf(found)/2]})
+  .replace(/([бвгдзклмнпрстфх])(ио|иу|иа|е|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+["ïo","ïu","ïa","e","io","iu","ia"][["ио","иу","иа","е","ё","ю","я"].indexOf(p2)]})
+  .replace(/([йжцчшщ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua"["еёюя".indexOf(p2)]})
+  .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","w","g","d","je","jo","ż","z","i","j","k","ł","m","n","o","p","r","s","t","u","f","ch","c","cz","sz","szcz","","y","","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
 },
-"Польская": function(text) {
-	return text
-	.replace(/[лтд]ь[иеёюя]/g,function(found,offset,s){return ["lji","lje","ljo","lju","lja","cji","cje","cjo","cju","cja","dzji","dzje","dzjo","dzju","dzja"]["льильельёльюльятьитьетьётьютьядьидьедьёдьюдья".indexOf(found)/3]})
-	.replace(/тти[оуа]/g,function(found,offset,s){return "ccíoccíuccía".substr("ттиоттиуттиа".indexOf(found),4)})
-	.replace(/(?:лл|тт)[иеёюя]/g,function(found,offset,s){return ["lli","lle","llo","llu","lla","cci","ccie","ccio","cciu","ccia"]["ллиллеллёллюлляттиттеттёттюття".indexOf(found)/3]})
-	.replace(/[тд]и[оуа]/g,function(found,offset,s){return ["cío","cíu","cía","dzío","dzíu","dzía"]["тиотиутиадиодиудиа".indexOf(found)/3]})
-	.replace(/[лтд][иеёюя]/g,function(found,offset,s){return ["li","le","lo","lu","la","ci","cie","cio","ciu","cia","dzi","dzie","dzio","dziu","dzia"]["лилелёлюлятитетётютядидедёдюдя".indexOf(found)/2]})
-	.replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
-	.replace(/[лтдсзнр]ь/g,function(found,offset,s){return ["l","ć","dź","ś","ź","ń","ŕ"]["льтьдьсьзьньрь".indexOf(found)/2]})
-	.replace(/([жцчшщ])ь/g,"$1")
-	.replace(/ь(?=[а-яё])/g,"")
-	.replace(/([бвгдзклмнпрстфх])(е|ё|ю|я|ио|иу|иа)/g,function(found,p1,p2,offset,s){return p1+"ieioiuiaïoïuïa".substr(["е","ё","ю","я","ио","иу","иа"].indexOf(p2)*2,2)})
-	.replace(/ци/g,"cy")
-	.replace(/([йжцчшщ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua".charAt("еёюя".indexOf(p2))})
-	.replace(/[а-яё]/g,function(found,offset,s){return ["a","b","w","g","d","je","jo","ż","z","i","j","k","ł","m","n","o","p","r","s","t","u","f","ch","c","cz","sz","szcz","’","y","’","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
+"Облегчённая чешская": function(text) {
+  return text
+  .replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
+  .replace(/[бвдзлмнпрстф]ь/g,function(found,offset,s){return ["bj","vj","ď","ź","ĺ","ḿ","ń","ṕ","ŕ","ś","ť","fj"]["бьвьдьзьльмьньпьрьсьтьфь".indexOf(found)/2]})
+  .replace(/([бвгдзклмнпрстфх])(ио|иу|иа|е|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+["ïo","ïu","ïa","e","io","iu","ia"][["ио","иу","иа","е","ё","ю","я"].indexOf(p2)]})
+  .replace(/([йжцчшщ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua"["еёюя".indexOf(p2)]})
+  .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","je","jo","ž","z","i","j","k","l","m","n","o","p","r","s","t","u","f","ch","c","č","š","šč","","y","","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
 },
 "Советская №2": function(text) {
-	return text
-	.replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
-	.replace(/([жцчшщ])ь/g,"$1")
-	.replace(/([бвгдзклмнпрстфх])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eöüä".charAt("еёюя".indexOf(p2))})
-	.replace(/([йжцчшщъ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua".charAt("еёюя".indexOf(p2))})
-	.replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","je","jo","ƶ","z","i","j","k","l","m","n","o","p","r","s","t","u","f","x","ç","c","ş","sc","j","y","j","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
+  return text
+  .replace(/ь[иеёюя]/g,function(found,offset,s){return "jijejojuja".substr("ьиьеьёьюья".indexOf(found),2)})
+  .replace(/([жцчшщ])ь/g,"$1")
+  .replace(/([бвгдзклмнпрстфх])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eöüä"["еёюя".indexOf(p2)]})
+  .replace(/([йжцчшщъ])([еёюя])/g,function(found,p1,p2,offset,s){return p1+"eoua"["еёюя".indexOf(p2)]})
+  .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","je","jo","ƶ","z","i","j","k","l","m","n","o","p","r","s","t","u","f","x","ç","c","ş","sc","j","y","j","e","ju","ja"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
 },
 "Кадинский": function(text) {
-	return text
-	.replace(/е([аоу])/g,function(found,p1,offset,s){return "е"+"äöü".charAt("аоу".indexOf(p1))})
-	.replace(/[ьиы][йиеёюя]/g,function(found,offset,s){return ["ii","ie","io","iu","ia","y","ye","yo","yu","ya","iy","hy","hiy","hye","hyo","hyu","hya"]["ьиьеьёьюьяийиеиёиюияииыйыиыеыёыюыя".indexOf(found)/2]})
-	.replace(/([аеёоуыэюя])и/g,"$1y")
-	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэыи])/g,function(found,p1,p2,offset,s){return p1+["e","eo","eu","ea","he","hi","i"]["еёюяэыи".indexOf(p2)]})
-	.replace(/([жцчшщ])ь/g,"$1")
-	.replace(/[гкхжчшщ][iey]/g,function(found,offset,s){return ["ghi","ghe","ghy","chi","che","chy","xhi","xhe","xhy","gi","ge","gy","ci","ce","cy","xi","xe","xy","sci","sce","scy"]["гiгeгyкiкeкyхiхeхyжiжeжyчiчeчyшiшeшyщiщeщy".indexOf(found)/2]})
-	.replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","ie","io","gh","z","i","i","c","l","m","n","o","p","r","s","t","u","f","x","tz","ch","xh","sch","h","i","h","e","iu","ia"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
+  return text
+  .replace(/е([аоу])/g,function(found,p1,offset,s){return "е"+"äöü"["аоу".indexOf(p1)]})
+  .replace(/[ьиы][йиеёюя]/g,function(found,offset,s){return ["ii","ie","io","iu","ia","y","ye","yo","yu","ya","iy","hy","hiy","hye","hyo","hyu","hya"]["ьиьеьёьюьяийиеиёиюияииыйыиыеыёыюыя".indexOf(found)/2]})
+  .replace(/([аеёоуыэюя])и/g,"$1y")
+  .replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэыи])/g,function(found,p1,p2,offset,s){return p1+["e","eo","eu","ea","he","hi","i"]["еёюяэыи".indexOf(p2)]})
+  .replace(/([жцчшщ])ь/g,"$1")
+  .replace(/[гкхжчшщ][iey]/g,function(found,offset,s){return ["ghi","ghe","ghy","chi","che","chy","xhi","xhe","xhy","gi","ge","gy","ci","ce","cy","xi","xe","xy","sci","sce","scy"]["гiгeгyкiкeкyхiхeхyжiжeжyчiчeчyшiшeшyщiщeщy".indexOf(found)/2]})
+  .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","ie","io","gh","z","i","i","c","l","m","n","o","p","r","s","t","u","f","x","tz","ch","xh","sch","h","i","h","e","iu","ia"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
 },
 "Морисон": function(text) {
-	return text
-	.replace(/тз/g,"т’з")
-	.replace(/ь[иеёюя]/g,function(found,offset,s){return "yiyeyoyuya".substr("ьиьеьёьюья".indexOf(found),2)})
-	.replace(/([аеёиоуыэюя])и/g,"$1yi")
-	.replace(/([бвгджзклмнпрстфхцчшщ])(ио|иа|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+"ïoïaioiuia".substr(["ио","иа","ё","ю","я"].indexOf(p2)*2,2)})
-	.replace(/([а-яё])([еэ])/g,function(found,p1,p2,offset,s){return p1+"eë".charAt("еэ".indexOf(p2))})
-	.replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","ye","yo","j","z","i","i","k","l","m","n","o","p","r","s","t","ou","f","c","tz","ch","sh","sch","’","u","y","e","yu","ya"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
-},
-"Лысактотал": function(text) {
-	return text
-	.replace(/[ьъ]([иеёюя])/g,function(found,p1,offser,s){return "’"+"ieoua".charAt("иеёюя".indexOf(p1))})
-	.replace(/([жцчшщ])ь/g,"$1")
-	.replace(/([аеёиоуыэюя])и/g,"$1’i")
-	.replace(/([жцш])и/g,"$1ы")
-	.replace(/([а-яё])е/g,"$1e")
-	.replace(/([бвгдзклмнпрстфх])([ёюяь])/g,function(found,p1,p2,offset,s){return "’"+p1+"oua".charAt("ёюяь".indexOf(p2))})
-	.replace(/([ийжцчшщ])([еёюя])/g,function(found,offser,p1,p2,s){return p1+"eoua".charAt("еёюя".indexOf(p2))})
-	.replace(/щ/g,"’h")
-	.replace(/(?=[еёюя])/g,"i")
-	.replace(/[абвгдеёжзийклмнопрстуфхцчшыэюя]/g,function(found,offset,s){return "abvgdeojziiklmnoprstufxqchyeua".charAt("абвгдеёжзийклмнопрстуфхцчшыэюя".indexOf(found))});
+  return text
+  .replace(/тз/g,"т’з")
+  .replace(/ь[иеёюя]/g,function(found,offset,s){return "yiyeyoyuya".substr("ьиьеьёьюья".indexOf(found),2)})
+  .replace(/([аеёиоуыэюя])и/g,"$1yi")
+  .replace(/([бвгджзклмнпрстфхцчшщ])(ио|иа|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+"ïoïaioiuia".substr(["ио","иа","ё","ю","я"].indexOf(p2)*2,2)})
+  .replace(/([а-яё])([еэ])/g,function(found,p1,p2,offset,s){return p1+"eë"["еэ".indexOf(p2)]})
+  .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","ye","yo","j","z","i","i","k","l","m","n","o","p","r","s","t","ou","f","c","tz","ch","sh","sch","’","u","y","e","yu","ya"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
 },
 '- По умолчанию -': function(text) {
 	return text
