@@ -72,61 +72,73 @@ input[value="Латинизировать"] {
 	</div>
 <script>
 var translitWord = {
-'Т1 (й-j, ы-y, ь-ĵ)': function(text) {
+'Т 1 (й-j, ы-y, ь-ĵ)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','y','ĵ','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т1.1 (й-j, ы-y, ь-ĵ, ю-ų, я-ą)': function(text) {
+'Т 1.1 (й-j, ы-y, ь-ĵ, ю-ų, я-ą)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','y','ĵ','ė','ų','ą']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т1 ASCII (й-j, ы-y, ь-j)': function(text) {
+'Т 1 ASCII (й-j, ы-y, ь-j)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','y','j','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т2 (й-j, ы-y, ь-q)': function(text) {
+'Т 2 (й-j, ы-y, ь-q)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','y','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т2 ASCII (й-j, ы-y, ь-q)': function(text) {
+'Т 2 ASCII (й-j, ы-y, ь-q)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','e','z','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','y','q','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т3 (й-y, ы-ī, ь-q)': function(text) {
+'Т 3 (й-y, ы-ī, ь-q)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','ī','q','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т3.1 (й-y, ы-ī, ь-j)': function(text) {
+'Т 3.1 (й-y, ы-ī, ь-j)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','ġ','ī','j','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т3.1 ASCII (й-y, ы-ī, ь-j)': function(text) {
+'Т 3.2 (й-y, ы-ī, ь-j)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','q','ī','j','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'Т 3.3 (й-y, ы-ī, ь-j)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','ch','c','č','š','ś','q','ī','j','ė','ũ','ã']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'Т 3.1 ASCII (й-y, ы-ī, ь-j)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','e','z','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','c','s','s','g','i','j','e','u','a']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Т4 (й-j, ы-y, ь-q)': function(text) {
+'Т 4 (й-j, ы-y, ь-q)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','x','c','ç','ş','ś','ġ','y','q','ė','ų','ą']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Р1 (й-y, ы-ī, ь-j)': function(text) {
+'Р 1 (й-y, ы-ī, ь-j)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
