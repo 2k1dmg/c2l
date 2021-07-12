@@ -224,6 +224,18 @@ var translitWord = {
   .replace(/([бвгджзклмнпрстфхцчшщ])(ио|иа|ё|ю|я)/g,function(found,p1,p2,offset,s){return p1+"ïoïaioiuia".substr(["ио","иа","ё","ю","я"].indexOf(p2)*2,2)})
   .replace(/([а-яё])([еэ])/g,function(found,p1,p2,offset,s){return p1+"eë"["еэ".indexOf(p2)]})
   .replace(/[а-яё]/g,function(found,offset,s){return ["a","b","v","g","d","ye","yo","j","z","i","i","k","l","m","n","o","p","r","s","t","ou","f","c","tz","ch","sh","sch","’","u","y","e","yu","ya"]["абвгдеёжзийклмнопрстуфхцчшщъыьэюя".indexOf(found)]});
+},
+'^ Без букв "е, ё, ю , я, ъ"': function(text) {
+	return text
+	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюя])/g, function(found,p1,p2,offset,s) {
+		return p1+'ь'+'эоуа'['еёюя'.indexOf(p2)];
+	})
+	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
+		return 'й'+'эоуа'['еёюя'.indexOf(p1)];
+	})
+	.replace(/([еёюя])/g, function(found,p1,offset,s) {
+		return ['йэ','йо','йу','йа']['еёюя'.indexOf(p1)];
+	});
 }
 };
 
