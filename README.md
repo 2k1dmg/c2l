@@ -1,14 +1,81 @@
-<details>
-  <summary>Транслит - примеры</summary>
-
-№ | Алфавит
------------- | -------------
-1 | `a b v g d e ë ž z i j k l m n o p r s t u f x c č š ś ġ y q ė ũ ã`
-2 | `a b v g d e e z z i j k l m n o p r s t u f x c c s s g y q e u a`
-3 | `a b v g d e ë ž z i y k l m n o p r s t u f x c č š ś ġ ī q ė ũ ã`
-4 | `a b v g d e ë ž z i y k l m n o p r s t u f x c č š ś ġ ĭ q ė ũ ã`
-5 | `a b v g d e ë ž z i y k l m n o p r s t u f x c č š ś ġ î q ė ũ ã`
-6 | `a b v g d e ë ž z i j k l m n o p r s t u f x c ç ş ś ġ y q ė ų ą`
-</details>
+<table>
+   <tbody>
+      <tr>
+         <th colspan="34">Алфавит</th>
+      </tr>
+      <tr align=center>
+         <th>Кириллица</th>
+         <td>А</td>
+         <td>Б</td>
+         <td>В</td>
+         <td>Г</td>
+         <td>Д</td>
+         <td>Е</td>
+         <td>Ё</td>
+         <td>Ж</td>
+         <td>З</td>
+         <td>И</td>
+         <td>Й</td>
+         <td>К</td>
+         <td>Л</td>
+         <td>М</td>
+         <td>Н</td>
+         <td>О</td>
+         <td>П</td>
+         <td>Р</td>
+         <td>С</td>
+         <td>Т</td>
+         <td>У</td>
+         <td>Ф</td>
+         <td>Х</td>
+         <td>Ц</td>
+         <td>Ч</td>
+         <td>Ш</td>
+         <td>Щ</td>
+         <td>Ъ</td>
+         <td>Ы</td>
+         <td>Ь</td>
+         <td>Э</td>
+         <td>Ю</td>
+         <td>Я</td>
+      </tr>
+      <tr align=center>
+         <th>ASCII 1</th>
+         <td>A</td>
+         <td>B</td>
+         <td>V</td>
+         <td>G</td>
+         <td>D</td>
+         <td>E</td>
+         <td>EJ</td>
+         <td>GZ</td>
+         <td>Z</td>
+         <td>I</td>
+         <td>Y</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>F</td>
+         <td>CH</td>
+         <td>CZ</td>
+         <td>C</td>
+         <td>SX</td>
+         <td>SW</td>
+         <td>Q</td>
+         <td>IW</td>
+         <td>J</td>
+         <td>EW</td>
+         <td>YU</td>
+         <td>YA</td>
+      </tr>
+   <tbody>
+<table>
 
 [userscript](https://greasyfork.org/scripts/21717)
