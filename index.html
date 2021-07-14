@@ -171,7 +171,7 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ś','','ì','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Р 1 ASCII (й-y, ы-y, х-x)': function(text) {
+'Р 1 ASCII (й-y, ы-i, х-x)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
@@ -205,7 +205,7 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','šč','','ì','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Р 2 ASCII (й-y, ы-y, х-x)': function(text) {
+'Р 2 ASCII (й-y, ы-i, х-x)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
