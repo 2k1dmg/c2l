@@ -213,6 +213,7 @@ var translitWord = {
 		return p1+'eoua'['еёюя'.indexOf(p2)];
 	})
 	.replace(/([жцчшщ])ь/g, '$1')
+	.replace(/ь$/g, '')
 	.replace(/([бвгдзклмнпрстфх])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','io','iu','ia','eh']['еёюяэ'.indexOf(p2)];
 	})
