@@ -126,6 +126,6 @@
 <table>
 
 ![ASCII 1](files/ascii1.png?raw=true "ASCII 1")
-
+*ASCII 1*
 
 [userscript](https://greasyfork.org/scripts/21717)
