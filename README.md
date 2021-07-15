@@ -3,7 +3,7 @@
 Третий «ASCII 4 (й-y, ы-iw, х-ch, ш-sx)» можно использовать если есть только клавиатура с основной латиницей.
 
 Раскладка клавиатуры:  
-<a href="files/RuSCUKEN.klc?raw=true" download="RuSCUKEN.klc" title="SCUKEN (ЩЦУКЕН)">SCUKEN (ЩЦУКЕН)</a> (Microsoft Keyboard Layout Creator)
+[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) (Microsoft Keyboard Layout Creator)
 
 ```
 ś c u k e n g š y z x è
