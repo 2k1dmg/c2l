@@ -209,7 +209,7 @@ var translitWord = {
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
 	})
-	.replace(/([бвгдзклмнпрстфхйжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eöüäè'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
