@@ -193,11 +193,7 @@ var translitWord = {
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
 	})
-	.replace(/([йжцчшщ])([еёюя])/g, function(found,p1,p2,offset,s) {
-		return p1+'eoua'['еёюя'.indexOf(p2)];
-	})
-	.replace(/([жцчшщ])ь/g, '$1')
-	.replace(/([бвгдзклмнпрстфх])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eöüäè'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
@@ -209,7 +205,11 @@ var translitWord = {
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
 		return 'y'+'eoua'['еёюя'.indexOf(p1)];
 	})
-	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+	.replace(/([йжцчшщ])([еёюя])/g, function(found,p1,p2,offset,s) {
+		return p1+'eoua'['еёюя'.indexOf(p2)];
+	})
+	.replace(/([жцчшщ])ь/g, '$1')
+	.replace(/([бвгдзклмнпрстфх])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eöüäè'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
