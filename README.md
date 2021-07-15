@@ -86,6 +86,42 @@
          <td>YU</td>
          <td>YA</td>
       </tr>
+      <tr align=center>
+         <th>ASCII 4</th>
+         <td>A</td>
+         <td>B</td>
+         <td>V</td>
+         <td>G</td>
+         <td>D</td>
+         <td>YE</td>
+         <td>YO</td>
+         <td>GZ</td>
+         <td>Z</td>
+         <td>I</td>
+         <td>Y</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>F</td>
+         <td>CH</td>
+         <td>CZ</td>
+         <td>C</td>
+         <td>SX</td>
+         <td>SW</td>
+         <td>-</td>
+         <td>IW</td>
+         <td>J</td>
+         <td>E</td>
+         <td>YU</td>
+         <td>YA</td>
+      </tr>
    <tbody>
 <table>
 
