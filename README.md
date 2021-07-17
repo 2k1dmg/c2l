@@ -7,8 +7,8 @@
 
 ```
 ś c u k e n g š y z x è
- f ì v a p r o l d ž ö
-  ä č s m i t j b ü
+ f ì v a p r o l d ž ŏ
+  ă č s m i t j b ŭ
 ```
 
 <table>
