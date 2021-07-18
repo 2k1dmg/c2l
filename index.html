@@ -261,7 +261,7 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','kh','c','ch','sh','shch','','y','','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
-'Р3 (х-h/ç)': function(text) {
+'Р 3 (х-h/ç)': function(text) {
 	return text
 	.replace(/([чдлнрсштзщв])([ёюяь])/g, function(found,p1,p2,offset,s) {
 		return 'ĉďľńŕśŝťźĥŵ'['чдлнрсштзщв'.indexOf(p1)]+['o','u','a','']['ёюяь'.indexOf(p2)];
