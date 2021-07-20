@@ -320,12 +320,12 @@ var translitWord = {
 	.replace(/([бвгджзклмнпрстфхцчшщćĉďľńŕśŝťźĥŵ])([хэе])/g, function(found,p1,p2,offset,s) {
 		return p1+'çèe'['хэе'.indexOf(p2)];
 	})
-	.replace(/ый/g, 'ŷ')
-	.replace(/ий/g, 'î')
-	.replace(/ей|eй/g, 'ê')
-	.replace(/ой/g, 'ô')
-	.replace(/ай/g, 'â')
-	.replace(/уй/g, 'û')
+	.replace(/(.+)ый/g, '$1ŷ')
+	.replace(/(.+)ий/g, '$1î')
+	.replace(/(.+)ей|eй/g, '$1ê')
+	.replace(/(.+)ой/g, '$1ô')
+	.replace(/(.+)ай/g, '$1â')
+	.replace(/(.+)уй/g, '$1û')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ħ','','ì','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
