@@ -6,9 +6,9 @@
 [SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) (Microsoft Keyboard Layout Creator)
 
 ```
-ś c u k e n g š y z x è
- f ì v a p r o l d ž ŏ
-  ă č s m i t j b ŭ
+ŝ c u k e n g š y z x è
+ f ì v a p r o l d ž ō
+  ā č s m i t j b ū
 ```
 
 [ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc)
