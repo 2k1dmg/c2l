@@ -3,7 +3,7 @@
 ~~Третий «ASCII 5 (й-y, ы-iw, х-x, ш-sw)» можно использовать если есть только клавиатура с основной латиницей.~~
 
 Раскладки клавиатуры:  
-[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) (Microsoft Keyboard Layout Creator)
+[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «Р 2в» (Microsoft Keyboard Layout Creator)
 
 ```
 ŝ c u k e n g š y z x è
@@ -11,7 +11,7 @@
   ā č s m i t j b ū
 ```
 
-[ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc)
+[ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «Р 2б»
 
 ```
 è c u k e n g š y z h
