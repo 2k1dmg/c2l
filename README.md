@@ -6,16 +6,16 @@
 [SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «Р 2в» (Microsoft Keyboard Layout Creator)
 
 ```
-ŝ c u k e n g š y z x è
- f ì v a p r o l d ž ō
+ŝ c u k e n g š y z x ê
+ f î v a p r o l d ž ō
   ā č s m i t j b ū
 ```
 
 [ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «Р 2б»
 
 ```
-è c u k e n g š y z h
- f ì v a p r o l d ž ō
+ê c u k e n g š y z h
+ f î v a p r o l d ž ō
   ā č s m i t j b ū
 ```
 
