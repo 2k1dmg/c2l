@@ -19,6 +19,15 @@
   ā č s m i t j b ū
 ```
 
+[SCUKE3 (ЩЦУКЕ3)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE3.klc) «**Р 2ва/ба**»
+
+```
+  ź ŕ ď ś ń ľ ť
+ŝ c u k e n g š y z h ê
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
+
 [ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «**Р 2б**»
 
 ```
