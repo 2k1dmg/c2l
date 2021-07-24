@@ -10,6 +10,14 @@
  f î v a p r o l d ž ō
   ā č s m i t j b ū
 ```
+ 
+[SCUKE2 (ЩЦУКЕ2)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE2.klc) «**Р 2ва/б**»
+
+```
+ŝ c u k e n g š y z h ê
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
 
 [ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «**Р 2б**»
 
