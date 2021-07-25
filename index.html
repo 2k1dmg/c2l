@@ -509,6 +509,18 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ħ','','î','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'Р 6 (й-y, ы-î, х-x, щ-ż)': function(text) {
+	return text
+	.replace(/([еёюяэоуаиыь])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+		return p1+'eōūāê'['еёюяэ'.indexOf(p2)];
+	})
+	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+		return p1+'eōūāê'['еёюяэ'.indexOf(p2)];
+	})
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ż','','î','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 "Усовершенствованная польская": function(text) {
   return text
   .replace(/л?[ль][иеёюя]/g,function(found,offset,s){return ["lji","lje","ljo","lju","lja","lli","lle","llo","llu","lla","li","le","lo","lu","la","ji","je","jo","ju","ja"][["льи","лье","льё","лью","лья","лли","лле","ллё","ллю","лля","ли","ле","лё","лю","ля","ьи","ье","ьё","ью","ья"].indexOf(found)]})
