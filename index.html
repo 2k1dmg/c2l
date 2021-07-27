@@ -420,7 +420,7 @@ var translitWord = {
 		return p1+'eōūāə'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
-		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ŝ','','ỿ','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+		return ['a','b','v','g','d','ye','yo','ž','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','č','š','ṡ','','ỿ','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
 'Р 2.1 (й-y, ы-ì, х-x, щ-ś)': function(text) {
