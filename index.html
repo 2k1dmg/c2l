@@ -142,6 +142,18 @@ var translitWord = {
 		return ['a','b','v','g','d','ye','yo','gz','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','cz','c','sw','sx','','iw','j','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'ASCII 6 (й-j, ы-y, х-ch, ш-x)': function(text) {
+	return text
+	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+		return p1+['e','oh','uh','ah','ew']['еёюяэ'.indexOf(p2)];
+	})
+	.replace(/ь([еёюя])/g, function(found,p1,offset,s) {
+		return 'j'+['eh','oh','uh','ah']['еёюя'.indexOf(p1)];
+	})
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','cz','c','x','xc','','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 'Т 1 (й-y, ы-ì, ь-j)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
