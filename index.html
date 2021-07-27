@@ -151,7 +151,7 @@ var translitWord = {
 		return 'j'+['eh','oh','uh','ah']['еёюя'.indexOf(p1)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
-		return ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','cz','c','x','xc','','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+		return ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','ch','q','c','x','xc','','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
 'Т 1 (й-y, ы-ì, ь-j)': function(text) {
