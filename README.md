@@ -16,7 +16,7 @@
   
 </details>
 
-Раскладки клавиатуры:  
+Примеры раскладок клавиатуры:  
 [SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «**Р 2в**» (Microsoft Keyboard Layout Creator)
 
 ```
