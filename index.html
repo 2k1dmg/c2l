@@ -589,7 +589,7 @@ var translitWord = {
 	.replace(/([еёюяэоуаиы])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
 	})
-	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгдзклмнпрстфхжцчшщй])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/ь([еёюяоуаэ])/g, function(found,p1,offset,s) {
