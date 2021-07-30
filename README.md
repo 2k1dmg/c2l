@@ -18,7 +18,18 @@
 </details>
 
 Примеры раскладок клавиатуры:  
-[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «**Р 2в**» (Microsoft Keyboard Layout Creator)
+[SCUKE4 (ЩЦУКЕ4)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE4.klc) «**Р 8**»
+
+```
+ħ c u k e n g š j z h ê
+ f y v a p r o l d ž ō
+  ā č s m i t ì b ū
+```
+
+<details>
+  <summary>другие</summary>
+  
+[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «**Р 2в**»
 
 ```
 ŝ c u k e n g š y z x ê
@@ -50,6 +61,8 @@
  f î v a p r o l d ž ō
   ā č s m i t j b ū
 ```
+  
+</details>
 
 ?**Ō ō** -> **Ë ë**, **Ē ē**
 
