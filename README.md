@@ -21,7 +21,7 @@
 [SCUKE4 (ЩЦУКЕ4)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE4.klc) «**Р 8**»
 
 ```
-ħ c u k e n g š j z h ê
+ħ c u k e n g š j z h ě
  f y v a p r o l d ž ō
   ā č s m i t ì b ū
 ```
