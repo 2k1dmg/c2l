@@ -23,7 +23,7 @@
 ```
 ħ c u k e n g š j z h ě
  f y v a p r o l d ž ō
-  ā č s m i t ì b ū
+  ā č s m i t î b ū
 ```
 
 <details>
