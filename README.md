@@ -167,7 +167,7 @@
          <td>T</td>
          <td>U</td>
          <td>F</td>
-         <td>H</td>
+         <td>KH</td>
          <td>C</td>
          <td>CH</td>
          <td>SH</td>
