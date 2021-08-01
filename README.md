@@ -108,18 +108,18 @@
          <td>Я</td>
       </tr>
       <tr align=center>
-         <th>ASCII 1</th>
+         <th>Р 8</th>
          <td>A</td>
          <td>B</td>
          <td>V</td>
          <td>G</td>
          <td>D</td>
-         <td>E</td>
-         <td>EJ</td>
-         <td>GZ</td>
+         <td>JE</td>
+         <td>JO</td>
+         <td>Ž</td>
          <td>Z</td>
          <td>I</td>
-         <td>Y</td>
+         <td>J</td>
          <td>K</td>
          <td>L</td>
          <td>M</td>
@@ -131,20 +131,20 @@
          <td>T</td>
          <td>U</td>
          <td>F</td>
-         <td>CH</td>
-         <td>CZ</td>
+         <td>H</td>
          <td>C</td>
-         <td>SX</td>
-         <td>SW</td>
-         <td>Q</td>
-         <td>IW</td>
-         <td>J</td>
-         <td>EW</td>
-         <td>YU</td>
-         <td>YA</td>
+         <td>Č</td>
+         <td>Š</td>
+         <td>Ħ</td>
+         <td>-</td>
+         <td>Y</td>
+         <td>Ì</td>
+         <td>E</td>
+         <td>JU</td>
+         <td>JA</td>
       </tr>
       <tr align=center>
-         <th>ASCII 4</th>
+         <th>Р 2 ASCII 2</th>
          <td>A</td>
          <td>B</td>
          <td>V</td>
@@ -152,7 +152,7 @@
          <td>D</td>
          <td>YE</td>
          <td>YO</td>
-         <td>GZ</td>
+         <td>ZH</td>
          <td>Z</td>
          <td>I</td>
          <td>Y</td>
@@ -167,14 +167,14 @@
          <td>T</td>
          <td>U</td>
          <td>F</td>
-         <td>CH</td>
-         <td>CZ</td>
+         <td>H</td>
          <td>C</td>
-         <td>SX</td>
-         <td>SW</td>
+         <td>CH</td>
+         <td>SH</td>
+         <td>SCH</td>
          <td>-</td>
-         <td>IW</td>
-         <td>J</td>
+         <td>Y</td>
+         <td>-</td>
          <td>E</td>
          <td>YU</td>
          <td>YA</td>
