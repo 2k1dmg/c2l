@@ -218,7 +218,7 @@
    <tbody>
 <table>
 
-![ASCII 1](files/ascii6.png?raw=true "ASCII 6 / Шрифт: Learning Curve BV")
-*ASCII 1*
+![ASCII 6](files/ascii6.png?raw=true "ASCII 6 / Шрифт: Learning Curve BV")
+*ASCII 6*
  
 [userscript](https://greasyfork.org/scripts/21717)
