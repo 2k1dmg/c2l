@@ -260,7 +260,12 @@ c	28	0.611
 f	31	0.169
 ě	32	0.015
 ```
-   
+
 </details>
+
+Удалить диакритику:
+  ```javascript
+  'diākritikā'.normalize('NFD').replace(/\p{Mn}/gu, '');
+  ```
  
 [userscript](https://greasyfork.org/scripts/21717)
