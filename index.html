@@ -157,10 +157,11 @@ var translitWord = {
 },
 'ASCII 6а (й-j, ы-y, х-ch, ш-x, ъ[оуаыиэ])': function(text) {
 	return text
-	.replace(/ь([еоуа])/g, function(found,p1,offset,s) {
-		return 'ь'+['ie','\'o','\'u','\'a']['еоуа'.indexOf(p1)];
+	.replace(/ь([оуаыиэеёюя])/g, function(found,p1,offset,s) {
+		var text = ['o','u','a','y','i','e','ie','io','iu','ia']['оуаыиэеёюя'.indexOf(p1)];
+		return 'ь'+(text.length == 2 ? text : '\''+text);
 	})
-	.replace(/([бвгдзклмнпрстфхжцчшщь])([еёюяэ])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','oh','uh','ah','ew']['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/ъ([оуаыиэ])/g, function(found,p1,offset,s) {
