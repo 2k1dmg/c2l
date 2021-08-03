@@ -5,6 +5,8 @@
 
 В «**Р 8**» можно добавить правило  ъ[оуаыиэ] -> ’\* или '\*. Если использовать апостроф, то только как разделитель перед не йотированными гласными.
 
+Второй варинта должен быть сделан на основе требований к именам на [банковских картах](https://stackoverflow.com/questions/2004532/credit-card-validation-can-card-name-contain-non-ascii-characters).
+
 <details>
   <summary>?</summary>
   
