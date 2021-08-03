@@ -5,7 +5,7 @@
 
 В первый и второй можно добавить правило ъ[оуаыиэ] -> апостроф[оуаыиэ]. Если использовать [апостроф](https://en.wikipedia.org/wiki/Apostrophe#Unicode), то только как разделитель перед не йотированными гласными. А если вместо **ь**, то из-за большей частотность чем **ъ** слова и текст будут хуже восприниматься. Хотя в некоторых вариантах он так же ставиться между **ьо**: **Р 7** - "počtaljʼon"; **ASCII 6а** - "poctalj'on".
 
-[?](https://tedclancy.wordpress.com/2015/06/03/which-unicode-character-should-represent-the-english-apostrophe-and-why-the-unicode-committee-is-very-wrong/)  
+Какой апостроф выбрать[?](https://tedclancy.wordpress.com/2015/06/03/which-unicode-character-should-represent-the-english-apostrophe-and-why-the-unicode-committee-is-very-wrong/)  
 Для первого: `U+02BC`  
 Для второго: `U+0027`
 
