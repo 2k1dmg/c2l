@@ -649,8 +649,8 @@ var translitWord = {
 	.replace(/([еёюяэоуаиы])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
 	})
-	.replace(/(?:[^длнрстз])ь([еоуа])/g, function(found,p1,offset,s) {
-		return 'ь'+['ie','\'o','\'u','\'a']['еоуа'.indexOf(p1)];
+	.replace(/([^длнрстз]ь)([еоуа])/g, function(found,p1,p2,offset,s) {
+		return p1+['ie','\'o','\'u','\'a']['еоуа'.indexOf(p2)];
 	})
 	.replace(/([бвгдзклмнпрстфхжцчшщйь])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
