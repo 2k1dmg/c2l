@@ -7,7 +7,7 @@
 
 Какой апостроф выбрать[?](https://tedclancy.wordpress.com/2015/06/03/which-unicode-character-should-represent-the-english-apostrophe-and-why-the-unicode-committee-is-very-wrong/)  
 Для первого: `U+02BC`  
-Для второго: `U+0027`
+Для второго: `U+0027`. Здесь нет выбора, только ASCII.
 
 Второй вариант должен быть сделан на основе требований к именам на [банковских картах](https://stackoverflow.com/questions/2004532/credit-card-validation-can-card-name-contain-non-ascii-characters).
 
