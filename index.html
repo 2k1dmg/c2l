@@ -71,7 +71,7 @@ input[value="Латинизировать"] {
 	<input type="button" title="Строчные" value="a" onclick="outtext.innerText = outtext.innerText.toLowerCase();">
 	<input type="button" title="Без диакритики" value="Ë→E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu, '');">
 	<input type="button" title="URL-ссылка" value="URL" onclick="outtext.innerText = outtext.innerText.replace(/ +/g, '-').toLowerCase().replace(/[^a-z-\u000a]/g,'').replace(/-+$/gm,'');">
-	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outText.innerText = Diacritics.clean(outText.innerText);">
+	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outtext.innerText = Diacritics.clean(outtext.innerText);">
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<div id="outtext"></div>
