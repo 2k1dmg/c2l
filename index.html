@@ -70,7 +70,7 @@ input[value="Латинизировать"] {
 	<input type="button" title="Строчные" value="a" onclick="outtext.innerText = outtext.innerText.toLowerCase();">
 	<input type="button" title="Без диакритики" value="Ë→E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu, '');">
 	<div id="container">
-		<div id="intext" contenteditable="true"></div>
+		<textarea id="intext"></textarea>
 		<div id="outtext"></div>
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
 	</div>
