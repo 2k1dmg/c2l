@@ -73,6 +73,7 @@ input[value="Латинизировать"] {
 	<input type="button" title="URL-ссылка" value="URL" onclick="outtext.innerText = outtext.innerText.replace(/ +/g,'-').toLowerCase().replace(/[^a-z-\u000a]/g,'').replace(/-+$/gm,'').replace(/-{2,}/g,'-');">
 	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outtext.innerText = Diacritics.clean(outtext.innerText);">
 	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
+	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<div id="outtext"></div>
