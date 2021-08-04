@@ -64,7 +64,6 @@ input[value="Латинизировать"] {
 	<input type="button" title="ctrl + enter" value="Латинизировать" onclick="translit();">
 	<select id="options"></select>
 	<br />
-	<input type="button" value="Очистить форматирование" onclick="clearFormating();">
 	<input type="button" value="Очистить" onclick="clearAll();">
 	&nbsp;
 	<input type="button" title="Прописные" value="A" onclick="outtext.innerText = outtext.innerText.toUpperCase();">
@@ -894,7 +893,7 @@ function getTranslit(text) {
 }
 
 function translit() {
-	outtext.innerHTML = getTranslit(intext.innerHTML);
+	outtext.innerHTML = getTranslit(intext.value);
 }
 
 function initpage() {
@@ -910,13 +909,13 @@ function initpage() {
 		}).join(' '));
 	}
 
-	intext.innerText = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
+	intext.value = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
 	translit();
 }
 
 function keyup(event) {
 	if(event.keyCode==13 && event.ctrlKey)
-	translit();
+		translit();
 }
 
 options.onchange = function(value) {
@@ -925,11 +924,8 @@ options.onchange = function(value) {
 	translit();
 };
 
-function clearFormating() {
-	intext.innerHTML = intext.innerText.replace(/\r?\n/g, '<br />');
-}
 function clearAll() {
-	intext.textContent = '';
+	intext.value = '';
 	outtext.textContent = '';
 }
 </script>
