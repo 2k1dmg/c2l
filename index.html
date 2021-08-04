@@ -59,6 +59,11 @@ input[value="Латинизировать"] {
 #options {
 	height: 17pt;
 }
+#copytext {
+  position: absolute;
+  top: 29pt;
+  right: 5pt;
+}
 </style>
 </head>
 <body onkeyup="keyup(event)" onload="initpage()">
@@ -77,6 +82,7 @@ input[value="Латинизировать"] {
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<div id="outtext"></div>
+		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
 	</div>
 <script>
@@ -932,6 +938,17 @@ options.onchange = function(value) {
 function clearAll() {
 	intext.value = '';
 	outtext.textContent = '';
+}
+
+function doCopyText() {
+	var temp = document.createElement('textarea');
+	temp.id = 'temp_element';
+	document.body.appendChild(temp);
+	temp.value = outtext.innerText;
+	var selector = document.querySelector('#temp_element');
+	selector.select();
+	document.execCommand('copy');
+	document.body.removeChild(temp);
 }
 
 (function (name, definition) {
