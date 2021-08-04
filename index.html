@@ -66,6 +66,10 @@ input[value="Латинизировать"] {
 	<br />
 	<input type="button" value="Очистить форматирование" onclick="clearFormating();">
 	<input type="button" value="Очистить" onclick="clearAll();">
+	&nbsp;
+	<input type="button" title="Прописные" value="A" onclick="outtext.innerText = outtext.innerText.toUpperCase();">
+	<input type="button" title="Строчные" value="a" onclick="outtext.innerText = outtext.innerText.toLowerCase();">
+	<input type="button" title="Без диакритики" value="Ë->E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu, '');">
 	<div id="container">
 		<div id="intext" contenteditable="true"></div>
 		<div id="outtext"></div>
