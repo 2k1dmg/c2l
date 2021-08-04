@@ -37,6 +37,12 @@
 		width: calc(100% - 22px);
 		min-height: 150px;
 	}
+	#copytext {
+		position: relative !important;
+		top: 0 !important;
+		right: 0 !important;
+		margin-top: 12pt;
+	}
 }
 #gitlink {
 	font-weight: bold;
@@ -81,8 +87,8 @@ input[value="Латинизировать"] {
 	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<div id="container">
 		<textarea id="intext"></textarea>
-		<div id="outtext"></div>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
+		<div id="outtext"></div>
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
 	</div>
 <script>
