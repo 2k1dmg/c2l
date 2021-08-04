@@ -277,12 +277,5 @@ f	31	0.169
 ```
 
 </details>
-
-Удалить диакритику:
-  ```javascript
-  'diākritikā'.normalize('NFD').replace(/\p{Diacritic}/gu, '');
-  
-  'diākritikā'.normalize('NFD').replace(/\p{Mn}/gu, '');
-  ```
  
 [userscript](https://greasyfork.org/scripts/21717)
