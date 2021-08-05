@@ -97,6 +97,7 @@ select {
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
 	</div>
 <script>
+'use strict';
 var translitWord = {
 'Основной': {},
 'Общий': {},
@@ -974,7 +975,7 @@ function doCopyText() {
 }
 
 (function (name, definition) {
-	this[name] = definition();
+	window[name] = definition();
 })('Diacritics', function () {
 	// https://github.com/nijikokun/Diacritics.js
 	// U+043B was removed
