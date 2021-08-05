@@ -98,6 +98,9 @@ select {
 	</div>
 <script>
 var translitWord = {
+'Основной': {},
+'Общий': {},
+'Локальный': {},
 'ASCII 1 (й-y, ы-iw, х-ch, ш-sx)': function(text) {
 	return text
 	.replace(/([бвгджзклмнпрстфхцчшщ])([юя])/g, function(found,p1,p2,offset,s) {
@@ -859,7 +862,6 @@ var translitWord = {
 };
 
 function getTranslitWord(text) {}
-getTranslitWord = Object.values(translitWord)[0];
 
 function singleUpper(a, i, s) {
 	var wb = getTranslitWord(a.toLowerCase());
@@ -919,6 +921,15 @@ function translit() {
 }
 
 function initpage() {
+	[
+		['Основной', 'Р 8.2 (й-j, ы-y, х-h/ch, щ-ħ, ъ[оуаыиэ])'],
+		['Общий', 'Р 2 ASCII 2б (й-y, ы-y, х-kh, щ-sch, ъ[оуаыиэ])'],
+		['Локальный', 'ASCII 6а (й-j, ы-y, х-ch, ш-x, ъ[оуаыиэ])']
+	].forEach(function(e) {
+		translitWord[e[0]] = translitWord[e[1]];
+	});
+	getTranslitWord = Object.values(translitWord)[0];
+	
 	for(var key in translitWord)
 		options.appendChild(new Option(key,key));
 	intext.focus();
