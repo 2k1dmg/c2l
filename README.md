@@ -11,6 +11,11 @@
 
 Второй вариант должен быть сделан на основе требований к именам на [банковских картах](https://stackoverflow.com/questions/2004532/credit-card-validation-can-card-name-contain-non-ascii-characters).
 
+Аббревиатуры:
+Кириллица | Р 8 | Р 2 ASCII 2 | ASCII 6
+ :---: | :---: | :---: | :---:
+БЭВЕЦХ | BEVJECH | BEVYECKH | BEVJEQCH
+
 Варианты без апострофа:  
 1. Р 8  
 2. Р 2 ASCII 2  
