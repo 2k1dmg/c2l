@@ -961,8 +961,9 @@ function doCopyText() {
 (function (name, definition) {
 	this[name] = definition();
 })('Diacritics', function () {
-  // https://github.com/nijikokun/Diacritics.js
-  
+	// https://github.com/nijikokun/Diacritics.js
+	// U+043B was removed
+
   var output = {
     map: {}
   };
