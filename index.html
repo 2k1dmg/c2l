@@ -924,6 +924,7 @@ function translit() {
 	outtext.innerText = getTranslit(intext.value);
 }
 
+var timeoutID;
 function initpage() {
 	[
 		['Основной', 'Р 8.2 (й-j, ы-y, х-h/ch, щ-ħ, ъ[оуаыиэ])'],
@@ -954,7 +955,7 @@ function initpage() {
 			return;
 			*/
 		var keycode = event.keyCode;
-		var valid = keycode == 8 ||
+		var valid = keycode == 8 || keycode == 32 ||
 				(keycode > 47 && keycode < 58) || // number keys
 				(keycode > 64 && keycode < 91) || // letter keys
 				(keycode > 95 && keycode < 112) || // numpad keys
@@ -963,8 +964,18 @@ function initpage() {
 
 		if(!valid)
 			return;
+		
+		clearTimeout(timeoutID);
 
-		translit();
+		if(keycode == 32) {
+			translit();
+		}
+		else if(keycode == 8) {
+			timeoutID = window.setTimeout(translit, 100);
+		}
+		else {
+			timeoutID = window.setTimeout(translit, 500);
+		}
 	}
 
 	intext.value = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
