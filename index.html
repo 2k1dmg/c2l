@@ -576,8 +576,9 @@ var translitWord = {
 		return '\''+'ouayie'['оуаыиэ'.indexOf(p1)];
 	})
 	.replace(/ь$/g, 'e')
+	.replace(/^э/g, 'e')
 	.replace(/[а-яё]/g, function(found,offset,s) {
-		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','kh','tz','ch','sh','sc','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','kh','tz','ch','sh','sc','','y','i','eh','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
 'Р 3 (х-h/ç)': function(text) {
