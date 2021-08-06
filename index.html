@@ -946,7 +946,9 @@ function initpage() {
 		}).join(' '));
 	}
 	
-	intext.onkeyup = function() {
+	intext.onkeyup = function(event) {
+		if([18,20,17,91,92,16,9,40,37,39,38].indexOf(event.keyCode) > 0)
+			return;
 		translit();
 	}
 
