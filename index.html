@@ -549,7 +549,7 @@ var translitWord = {
 'Р 2 ASCII 2б (й-y, ы-y, х-kh, щ-sch, ъ[оуаыиэ])': function(text) {
 	return text
 	.replace(/([бвгдзклмнпрстфхжцчшщ])([еёюя])/g, function(found,p1,p2,offset,s) {
-		return p1+['e','io','iu','ia']['еёюя'.indexOf(p2)];
+		return p1+['e','yo','yu','ya']['еёюя'.indexOf(p2)];
 	})
 	.replace(/(ы)([еёюя])/g, function(found,p1,p2,offset,s) {
 		return p1+['ie','io','iu','ia']['еёюя'.indexOf(p2)];
