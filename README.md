@@ -24,7 +24,8 @@
 Для первого: `U+02BC` или `U+2019` или `U+0027`  
 Для второго: `U+0027`. Здесь нет выбора, только ASCII.
 
-Второй вариант должен быть сделан на основе требований к именам на [банковских картах](https://stackoverflow.com/questions/2004532/credit-card-validation-can-card-name-contain-non-ascii-characters).
+Второй вариант должен быть сделан на основе требований к именам на [банковских картах](https://stackoverflow.com/questions/2004532/credit-card-validation-can-card-name-contain-non-ascii-characters).  
+Буква **щ** - **sch** / **shch**. Намример для имён **sch**, а для URL-ссылылок **shch**.
 
 Аббревиатуры:
 Кириллица | Р 8 | Р 2 ASCII 2 | ASCII 6
