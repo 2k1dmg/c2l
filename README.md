@@ -252,6 +252,42 @@
          <td>JU</td>
          <td>JA</td>
       </tr>
+      <tr align=center>
+         <th>Р 2 ASCII 2в</th>
+         <td>A</td>
+         <td>B</td>
+         <td>V</td>
+         <td>G</td>
+         <td>D</td>
+         <td>YE</td>
+         <td>YO</td>
+         <td>ZH</td>
+         <td>Z</td>
+         <td>I</td>
+         <td>Y</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>F</td>
+         <td>KH</td>
+         <td>TZ</td>
+         <td>CH</td>
+         <td>SH</td>
+         <td>SC</td>
+         <td>-</td>
+         <td>Y</td>
+         <td>I/E</td>
+         <td>E</td>
+         <td>YU</td>
+         <td>YA</td>
+      </tr>
    <tbody>
 <table>
 
