@@ -276,7 +276,7 @@
          <td>T</td>
          <td>U</td>
          <td>F</td>
-         <td>KH</td>
+         <td>H/KH</td>
          <td>TZ</td>
          <td>CH</td>
          <td>SH</td>
