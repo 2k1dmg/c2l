@@ -277,7 +277,7 @@
          <td>U</td>
          <td>F</td>
          <td>H/KH</td>
-         <td>TZ</td>
+         <td>C/TZ</td>
          <td>CH</td>
          <td>SH</td>
          <td>SC</td>
