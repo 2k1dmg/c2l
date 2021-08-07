@@ -579,7 +579,7 @@ var translitWord = {
 	.replace(/ь$/g, 'e')
 	//.replace(/^э/g, 'e')
 	//.replace(/([бвгджзклмнпрстфхцчшщ])х/g, '$1kh')
-	.replace(/([бвгджзклмнпрстфхцчшщйъь])([хц])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгджзклмнпрстфхцчшщйь])([хц])/g, function(found,p1,p2,offset,s) {
 		return p1+['kh','tz']['хц'.indexOf(p2)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
