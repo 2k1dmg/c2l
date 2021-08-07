@@ -145,7 +145,7 @@
          <td>Я</td>
       </tr>
       <tr align=center>
-         <th>Р 8</th>
+         <th>Р 8.2</th>
          <td>A</td>
          <td>B</td>
          <td>V</td>
@@ -187,8 +187,8 @@
          <td>V</td>
          <td>G</td>
          <td>D</td>
-         <td>YE</td>
-         <td>YO</td>
+         <td>YE/E</td>
+         <td>YO/IO</td>
          <td>ZH</td>
          <td>Z</td>
          <td>I</td>
@@ -213,18 +213,18 @@
          <td>Y</td>
          <td>-</td>
          <td>E</td>
-         <td>YU</td>
-         <td>YA</td>
+         <td>YU/IU</td>
+         <td>YA/IA</td>
       </tr>
       <tr align=center>
-         <th>ASCII 6</th>
+         <th>ASCII 6а</th>
          <td>A</td>
          <td>B</td>
          <td>V</td>
          <td>G</td>
          <td>D</td>
-         <td>JE</td>
-         <td>JO</td>
+         <td>JE/E/IE</td>
+         <td>JO/OH/IO</td>
          <td>GZ</td>
          <td>Z</td>
          <td>I</td>
@@ -248,9 +248,9 @@
          <td>-</td>
          <td>Y</td>
          <td>J</td>
-         <td>E</td>
-         <td>JU</td>
-         <td>JA</td>
+         <td>E/WE</td>
+         <td>JU/UH/IU</td>
+         <td>JA/AH/IA</td>
       </tr>
       <tr align=center>
          <th>Р 2 ASCII 2в</th>
