@@ -259,8 +259,8 @@
          <td>V</td>
          <td>G</td>
          <td>D</td>
-         <td>YE</td>
-         <td>YO</td>
+         <td>YE/E</td>
+         <td>YO/IO</td>
          <td>ZH</td>
          <td>Z</td>
          <td>I</td>
@@ -284,9 +284,9 @@
          <td>-</td>
          <td>Y</td>
          <td>I/E</td>
-         <td>E</td>
-         <td>YU</td>
-         <td>YA</td>
+         <td>E/WE</td>
+         <td>YU/IU</td>
+         <td>YA/IA</td>
       </tr>
    <tbody>
 <table>
