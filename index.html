@@ -567,10 +567,10 @@ var translitWord = {
 	return text
 	//.replace(/е$/g, 'ew')
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
-		return p1+['e','yo','yu','ya','ew']['еёюяэ'.indexOf(p2)];
+		return p1+['e','yo','yu','ya','we']['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/(ы)([еёюяэ])/g, function(found,p1,p2,offset,s) {
-		return p1+['e','io','iu','ia','ew']['еёюяэ'.indexOf(p2)];
+		return p1+['e','io','iu','ia','we']['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/ый/g, 'yi')
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
