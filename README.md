@@ -151,8 +151,8 @@
          <td>V</td>
          <td>G</td>
          <td>D</td>
-         <td>JE</td>
-         <td>JO</td>
+         <td>JE/E</td>
+         <td>JO/Ō</td>
          <td>Ž</td>
          <td>Z</td>
          <td>I</td>
@@ -176,9 +176,9 @@
          <td>-</td>
          <td>Y</td>
          <td>Ì</td>
-         <td>E</td>
-         <td>JU</td>
-         <td>JA</td>
+         <td>E/Ě</td>
+         <td>JU/Ū</td>
+         <td>JA/Ā</td>
       </tr>
       <tr align=center>
          <th>Р 2 ASCII 2</th>
