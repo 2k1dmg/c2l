@@ -168,7 +168,7 @@
          <td>T</td>
          <td>U</td>
          <td>F</td>
-         <td>H</td>
+         <td>H/CH</td>
          <td>C</td>
          <td>Č</td>
          <td>Š</td>
