@@ -578,10 +578,11 @@ var translitWord = {
 	})
 	.replace(/ь$/g, 'e')
 	//.replace(/^э/g, 'e')
-	//.replace(/([бвгджзклмнпрстфхцчшщ])х/g, '$1kh')
-	.replace(/([бвгджзклмнпрстфхцчшщйь])([хц])/g, function(found,p1,p2,offset,s) {
+	.replace(/([бвгджзклмнпрстфхцчшщйь])х/g, '$1kh')
+	.replace(/(с)х/g, '$1tz')
+	/*.replace(/([бвгджзклмнпрстфхцчшщйь])([хц])/g, function(found,p1,p2,offset,s) {
 		return p1+['kh','tz']['хц'.indexOf(p2)];
-	})
+	})*/
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','ch','sh','sc','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
