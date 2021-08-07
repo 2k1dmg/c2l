@@ -568,8 +568,8 @@ var translitWord = {
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya','eh']['еёюяэ'.indexOf(p2)];
 	})
-	.replace(/(ы)([еёюя])/g, function(found,p1,p2,offset,s) {
-		return p1+['e','io','iu','ia']['еёюя'.indexOf(p2)];
+	.replace(/(ы)([еёюяэ])/g, function(found,p1,p2,offset,s) {
+		return p1+['e','io','iu','ia','eh']['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/ый/g, 'yi')
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
