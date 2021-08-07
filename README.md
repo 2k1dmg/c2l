@@ -181,7 +181,7 @@
          <td>JA/Ā</td>
       </tr>
       <tr align=center>
-         <th>Р 2 ASCII 2</th>
+         <th>Р 2 ASCII 2б</th>
          <td>A</td>
          <td>B</td>
          <td>V</td>
