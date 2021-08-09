@@ -247,7 +247,7 @@
          <td>Q</td>
          <td>C</td>
          <td>X</td>
-         <td>XC</td>
+         <td>XH</td>
          <td>-</td>
          <td>Y</td>
          <td>J</td>
