@@ -928,6 +928,7 @@ var translitWord = {
 },
 'Greek/Coptic': function(text) {
 	return text
+	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'υα'['юя'.indexOf(p2)])
 	.replace(/(ъ)([еёюя])/g, function(found,p1,p2,offset,s) {
 		return p1+['ιε','ιο','ιυ','ια']['еёюя'.indexOf(p2)];
 	})
