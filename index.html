@@ -566,6 +566,7 @@ var translitWord = {
 'Р 2 ASCII 2в (й-y, ы-y, х-kh, щ-sc, ь-i/e, ъ[оуаыиэ])': function(text) {
 	return text
 	//.replace(/е$/g, 'ew')
+	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya','we']['еёюяэ'.indexOf(p2)];
 	})
