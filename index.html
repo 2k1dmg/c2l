@@ -94,7 +94,7 @@ select {
 	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
 	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<div id="container">
-		<textarea id="intext"></textarea>
+		<textarea id="intext" onpaste="setTimeout(translit, 10);></textarea>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
 		<div id="outtext"></div>
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
