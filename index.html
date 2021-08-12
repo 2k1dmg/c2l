@@ -94,7 +94,7 @@ select {
 	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
 	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<div id="container">
-		<textarea id="intext" onpaste="setTimeout(translit, 10);"></textarea>
+		<textarea id="intext"></textarea>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
 		<div id="outtext"></div>
 		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
@@ -1025,36 +1025,22 @@ function initpage() {
 		}).join(' '));
 	}
 	
-	intext.onkeyup = function(event) {
-		/*
-		if([18,20,17,91,92,16,93,13,32,9,35,36,45,34,33,40,37,39,38,27,44,145,19,
-		112,113,114,115,116,117,118,119,120,121,123,
-		144].indexOf(event.keyCode) > 0)
-			return;
-			*/
-		var keycode = event.keyCode;
-		var valid = keycode == 8 || keycode == 32 ||
-				(keycode > 47 && keycode < 58) || // number keys
-				(keycode > 64 && keycode < 91) || // letter keys
-				(keycode > 95 && keycode < 112) || // numpad keys
-				(keycode > 185 && keycode < 193) || // ;=,-./` (in order)
-				(keycode > 218 && keycode < 223);   // [\]' (in order)
-
-		if(!valid)
-			return;
-		
+	intext.oninput = function(event) {
 		clearTimeout(timeoutID);
-
-		if(keycode == 32) {
+		
+		var type = event.inputType;
+		
+		if(type == 'insertFromPaste' || type == 'deleteByCut' ||
+				(type == 'insertText' && event.data == ' ')) {
 			translit();
 		}
-		else if(keycode == 8) {
+		else if(type == 'deleteContentBackward' || type == 'deleteContentForward') {
 			timeoutID = window.setTimeout(translit, 100);
-		}
+		} 
 		else {
 			timeoutID = window.setTimeout(translit, 500);
 		}
-	}
+	};
 
 	intext.value = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
 	translit();
