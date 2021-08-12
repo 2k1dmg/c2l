@@ -79,26 +79,6 @@ select {
   right: 5pt;
 }
 </style>
-</head>
-<body onkeyup="keyup(event)" onload="initpage()">
-	<input type="button" title="ctrl + enter" value="Латинизировать" onclick="translit();">
-	<select id="options"></select>
-	<br />
-	<input type="button" value="Очистить" onclick="clearAll();">
-	&nbsp;
-	<input type="button" title="Прописные" value="A" onclick="outtext.innerText = outtext.innerText.toUpperCase();">
-	<input type="button" title="Строчные" value="a" onclick="outtext.innerText = outtext.innerText.toLowerCase();">
-	<input type="button" title="Без диакритики" value="Ë→E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu,'');">
-	<input type="button" title="URL-ссылка" value="URL" onclick="outtext.innerText = outtext.innerText.replace(/ +/g,'-').toLowerCase().replace(/[^0-9a-z-\u000a]/g,'').replace(/^-+|-+$/gm,'').replace(/-{2,}/g,'-');">
-	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outtext.innerText = Diacritics.clean(outtext.innerText);">
-	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
-	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
-	<div id="container">
-		<textarea id="intext"></textarea>
-		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
-		<div id="outtext"></div>
-		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
-	</div>
 <script>
 'use strict';
 var translitWord = {
@@ -1047,6 +1027,12 @@ function initpage() {
 			timeoutID = window.setTimeout(translit, 500);
 		}
 	};
+	
+	options.onchange = function(value) {
+		var selected = options.options[options.options.selectedIndex].value;
+		getTranslitWord = translitWord[selected];
+		translit();
+	};
 
 	intext.value = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
 	translit();
@@ -1056,12 +1042,6 @@ function keyup(event) {
 	if(event.keyCode==13 && event.ctrlKey)
 		translit();
 }
-
-options.onchange = function(value) {
-	var selected = options.options[options.options.selectedIndex].value;
-	getTranslitWord = translitWord[selected];
-	translit();
-};
 
 function clearAll() {
 	intext.value = '';
@@ -1216,5 +1196,25 @@ function doCopyText() {
   return output;
 });
 </script>
+</head>
+<body onkeyup="keyup(event)" onload="initpage()">
+	<input type="button" title="ctrl + enter" value="Латинизировать" onclick="translit();">
+	<select id="options"></select>
+	<br />
+	<input type="button" value="Очистить" onclick="clearAll();">
+	&nbsp;
+	<input type="button" title="Прописные" value="A" onclick="outtext.innerText = outtext.innerText.toUpperCase();">
+	<input type="button" title="Строчные" value="a" onclick="outtext.innerText = outtext.innerText.toLowerCase();">
+	<input type="button" title="Без диакритики" value="Ë→E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu,'');">
+	<input type="button" title="URL-ссылка" value="URL" onclick="outtext.innerText = outtext.innerText.replace(/ +/g,'-').toLowerCase().replace(/[^0-9a-z-\u000a]/g,'').replace(/^-+|-+$/gm,'').replace(/-{2,}/g,'-');">
+	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outtext.innerText = Diacritics.clean(outtext.innerText);">
+	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
+	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
+	<div id="container">
+		<textarea id="intext"></textarea>
+		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
+		<div id="outtext"></div>
+		<a href="https://github.com/2k1dmg/c2l" id="gitlink" target="_blank" title="2k1dmg/c2l">GitHub</a>
+	</div>
 </body>
 </html>
