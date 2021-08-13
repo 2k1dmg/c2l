@@ -1027,11 +1027,12 @@ function initpage() {
 		clearTimeout(timeoutID);
 		
 		var type = event.inputType;
-		
+		/*
 		if(type == 'insertLineBreak') {
 			return;
 		}
-		else if(type == 'insertFromPaste' || type == 'deleteByCut' ||
+		else */
+		if(type == 'insertFromPaste' || type == 'deleteByCut' ||
 				(type == 'insertText' && event.data == ' ')) {
 			translit();
 		}
