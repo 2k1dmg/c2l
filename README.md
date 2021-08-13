@@ -293,9 +293,9 @@
          <td>SH</td>
          <td>SC</td>
          <td>-</td>
-         <td>Y/W</td>
+         <td>Y</td>
          <td>I/E</td>
-         <td>E/WE</td>
+         <td>E/'E</td>
          <td>YU/IU</td>
          <td>YA/IA</td>
       </tr>
