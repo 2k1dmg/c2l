@@ -1011,13 +1011,13 @@ function initpage() {
 	});
 	getTranslitWord = Object.values(translitWord)[0];
 	
-	for(var key in translitWord)
+	for(let key in translitWord)
 		options.appendChild(new Option(key,key));
 	intext.focus();
 	
 	var alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
-	for(var opt of options) {
-		var optionValue = opt.value;
+	for(let opt of options) {
+		let optionValue = opt.value;
 		opt.setAttribute('title', alphabet.split('').map(function(letter) {
 			return translitWord[optionValue](letter).toUpperCase();
 		}).join(' '));
@@ -1055,7 +1055,7 @@ function initpage() {
 }
 
 function keyup(event) {
-	if(event.keyCode==13 && event.ctrlKey)
+	if(event.keyCode == 13 && event.ctrlKey)
 		translit();
 }
 
