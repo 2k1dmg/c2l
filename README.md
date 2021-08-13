@@ -331,7 +331,7 @@
          <td>-</td>
          <td>Ȳ</td>
          <td>Ì</td>
-         <td>E/Ě</td>
+         <td>E/Ê</td>
          <td>YU/Ŭ</td>
          <td>YA/Ă</td>
       </tr>
