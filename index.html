@@ -450,13 +450,13 @@ var translitWord = {
 'Р 2га (й-y, ы-ȳ, х-x, щ-ħ, ъ[оуаыиэ])': function(text) {
 	return text
 	.replace(/([еёюяэоуаиы])([еёюяэ])/g, function(found,p1,p2,offset,s) {
-		return p1+'eŏŭăě'['еёюяэ'.indexOf(p2)];
+		return p1+'eŏŭăê'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/([бвгдзклмнпрстфхжцчшщйь])([еёюяэ])/g, function(found,p1,p2,offset,s) {
-		return p1+'eŏŭăě'['еёюяэ'.indexOf(p2)];
+		return p1+'eŏŭăê'['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/ъ([оуаыиэ])/g, function(found,p1,offset,s) {
-		return '\''+'ouayiě'['оуаыиэ'.indexOf(p1)];
+		return '\''+'ouayiê'['оуаыиэ'.indexOf(p1)];
 	})
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','ġ','z','i','y','k','l','m','n','o','p','r','s','t','u','f','x','c','ç','ş','ħ','','ȳ','ì','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
