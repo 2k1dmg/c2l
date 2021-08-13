@@ -299,6 +299,42 @@
          <td>YU/IU</td>
          <td>YA/IA</td>
       </tr>
+      <tr align=center>
+         <th>Р 2га</th>
+         <td>A</td>
+         <td>B</td>
+         <td>V</td>
+         <td>G</td>
+         <td>D</td>
+         <td>YE/E</td>
+         <td>YO/Ŏ</td>
+         <td>Ġ</td>
+         <td>Z</td>
+         <td>I</td>
+         <td>Y</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>F</td>
+         <td>X</td>
+         <td>C</td>
+         <td>Ç</td>
+         <td>Ş</td>
+         <td>Ħ</td>
+         <td>-</td>
+         <td>Ȳ</td>
+         <td>Ì</td>
+         <td>E/Ě</td>
+         <td>YU/Ŭ</td>
+         <td>YA/Ă</td>
+      </tr>
    <tbody>
 <table>
 
