@@ -1082,12 +1082,11 @@ function doCopyText() {
 	document.body.removeChild(temp);
 }
 
+// https://github.com/nijikokun/Diacritics.js
+// U+043B removed
 (function (name, definition) {
 	window[name] = definition();
 })('Diacritics', function () {
-	// https://github.com/nijikokun/Diacritics.js
-	// U+043B was removed
-
   var output = {
     map: {}
   };
