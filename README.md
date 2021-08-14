@@ -335,6 +335,42 @@
          <td>YU/Ŭ</td>
          <td>YA/Ă</td>
       </tr>
+      <tr align=center>
+         <th>Т 5</th>
+         <td>A</td>
+         <td>B</td>
+         <td>V</td>
+         <td>G</td>
+         <td>D</td>
+         <td>E</td>
+         <td>Ë</td>
+         <td>Ž</td>
+         <td>Z</td>
+         <td>I</td>
+         <td>J</td>
+         <td>K</td>
+         <td>L</td>
+         <td>M</td>
+         <td>N</td>
+         <td>O</td>
+         <td>P</td>
+         <td>R</td>
+         <td>S</td>
+         <td>T</td>
+         <td>U</td>
+         <td>F</td>
+         <td>H</td>
+         <td>C</td>
+         <td>Č</td>
+         <td>Š</td>
+         <td>Ħ</td>
+         <td>Î</td>
+         <td>Y</td>
+         <td>Ì</td>
+         <td>Ě</td>
+         <td>Ū</td>
+         <td>Ā</td>
+      </tr>
    <tbody>
 <table>
 
