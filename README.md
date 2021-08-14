@@ -420,5 +420,9 @@ f	31	0.169
 ```
 
 </details>
+
+##### Раскладка клавиатуры
+[Русская (машинопись)](https://ru.wikipedia.org/wiki/%D0%99%D0%A6%D0%A3%D0%9A%D0%95%D0%9D#%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F_(%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D1%8C))
+
  
 [userscript](https://greasyfork.org/scripts/21717)
