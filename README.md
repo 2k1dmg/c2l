@@ -114,6 +114,7 @@
 
 ?**Ō ō** -> **Ë ë**, **Ē ē**
 
+#### Сопоставление букв кириллицы и латиниц
 <table>
    <tbody>
       <tr>
@@ -376,7 +377,8 @@
 
 ![ASCII 6](files/ascii6.png?raw=true "ASCII 6 / Шрифт: Learning Curve BV")
 *ASCII 6*
- 
+
+#### Частотность
  <details>
   <summary>Приблизительная частотность букв Р 8</summary>
 
