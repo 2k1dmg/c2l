@@ -309,7 +309,7 @@
          <td>D</td>
          <td>YE/E</td>
          <td>YO/Ŏ</td>
-         <td>Ġ</td>
+         <td>Ż</td>
          <td>Z</td>
          <td>I</td>
          <td>Y</td>
