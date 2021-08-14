@@ -1006,11 +1006,15 @@ var timeoutID;
 function initpage() {
 	[
 		['Основной', 'Р 8.2 (й-j, ы-y, х-h/ch, щ-ħ, ъ[оуаыиэ])'],
+		['Общий (+ Локальный)', 'Р 2 ASCII 2в (й-y, ы-y, х-kh, щ-sc, ь-i/e, ъ[оуаыиэ])'],
 		['Общий', 'Р 2 ASCII 2б (й-y, ы-y, х-kh, щ-sch, ъ[оуаыиэ])'],
-		['Локальный', 'ASCII 6а (й-j, ы-y, х-ch, ш-x, ъ[оуаыиэ])'],
-		['Общий (+ Локальный)', 'Р 2 ASCII 2в (й-y, ы-y, х-kh, щ-sc, ь-i/e, ъ[оуаыиэ])']
+		['Локальный', 'ASCII 6а (й-j, ы-y, х-ch, ш-x, ъ[оуаыиэ])']
 	].forEach(function(e) {
 		translitWord[e[0]] = translitWord[e[1]];
+		
+		var elm = document.createElement('span');
+		elm.innerHTML = '<br>'+e[0] +': "'+ e[1].replace(/ [(].+/g,'')+'"';	
+		document.body.appendChild(elm);
 	});
 	getTranslitWord = Object.values(translitWord)[0];
 	
