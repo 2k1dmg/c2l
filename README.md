@@ -365,7 +365,7 @@
          <td>Č</td>
          <td>Š</td>
          <td>Ħ</td>
-         <td>Î</td>
+         <td>Ĵ</td>
          <td>Y</td>
          <td>Ì</td>
          <td>Ě</td>
