@@ -842,8 +842,8 @@ var translitWord = {
 },
 'Р 8.2 (+ жчшщь-ёюяь)': function(text) {
 	return text
-	.replace(/([жчшщ]ь)([ие])/g, function(found,p1,p2,offset,s) {
-		return p1+'j'+'ie'['ие'.indexOf(p2)];
+	.replace(/([жчшщ]ь)([иеёюя])/g, function(found,p1,p2,offset,s) {
+		return p1+'j'+'ieoua'['иеёюя'.indexOf(p2)];
 	})
 	.replace(/([жчшщ])([ёюяь])/g, function(found,p1,p2,offset,s) {
 		return p1+['o','u','a','']['ёюяь'.indexOf(p2)];
