@@ -636,8 +636,13 @@ var translitWord = {
 	})
 	//.replace(/ый/g, 'y')
 	.replace(/ьи/g, 'iyi')
+	/*
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'\''+'ouayie'['оуаыиэ'.indexOf(p2)];
+	})
+	*/
+	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
+		return ['\'','y']['ъь'.indexOf(p1)]+'ouayie'['оуаыиэ'.indexOf(p2)];
 	})
 	.replace(/ь$/g, 'e')
 	//.replace(/^э/g, 'e')
