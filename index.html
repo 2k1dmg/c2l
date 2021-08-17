@@ -1029,6 +1029,7 @@ var translitWord = {
 		return p1+'\''+'ουαηίἐ'['оуаыиэ'.indexOf(p2)];
 	})
 	*/
+	.replace(/ь([ие])/g, 'ί$1ί')
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
 		return ['\'','ι']['ъь'.indexOf(p1)]+'ουαηίἐ'['оуаыиэ'.indexOf(p2)];
 	})
