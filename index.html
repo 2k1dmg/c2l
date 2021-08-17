@@ -1024,8 +1024,13 @@ var translitWord = {
 	.replace(/(ъ)([еёюя])/g, function(found,p1,p2,offset,s) {
 		return p1+['ιε','ιο','ιυ','ια']['еёюя'.indexOf(p2)];
 	})
+	/*
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'\''+'ουαηίἐ'['оуаыиэ'.indexOf(p2)];
+	})
+	*/
+	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
+		return ['\'','ι']['ъь'.indexOf(p1)]+'ουαηίἐ'['оуаыиэ'.indexOf(p2)];
 	})
 	.replace(/ь$/g, 'ε')
 	.replace(/[а-яё]/g, function(found,offset,s) {
