@@ -1099,6 +1099,22 @@ function translit() {
 	outtext.innerText = getTranslit(intext.value);
 }
 
+var initPageText = `Съешь же ещё этих мягких французских булок, да выпей чаю.
+
+а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я
+
+есть это
+
+исходный
+
+подъезд объём изъян адъютант
+
+чье чьё чьи чья чью
+
+третьи третье медальон использовать
+
+ещё лучших хочешь веснушчатость`;
+	
 var timeoutID;
 function initpage() {
 	translitWordMap.forEach(function(e) {
@@ -1149,7 +1165,7 @@ function initpage() {
 		translit();
 	};
 
-	intext.value = 'Съешь же ещё этих мягких французских булок, да выпей чаю.\n\nа б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я';
+	intext.value = initPageText;
 	translit();
 }
 
