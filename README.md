@@ -80,53 +80,6 @@
   
 </details>
 
-Примеры раскладок клавиатуры:  
-[SCUKE4 (ЩЦУКЕ4)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE4.klc) «**Р 8**»
-
-```
-ħ c u k e n g š j z h ě
- f y v a p r o l d ž ō
-  ā č s m i t ì b ū
-```
-
-<details>
-  <summary>другие</summary>
-  
-[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «**Р 2в**»
-
-```
-ŝ c u k e n g š y z x ê
- f î v a p r o l d ž ō
-  ā č s m i t j b ū
-```
- 
-[SCUKE2 (ЩЦУКЕ2)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE2.klc) «**Р 2ва/б**»
-
-```
-ŝ c u k e n g š y z h ê
- f î v a p r o l d ž ō
-  ā č s m i t j b ū
-```
-
-[SCUKE3 (ЩЦУКЕ3)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE3.klc) «**Р 2ва/ба**»
-
-```
-  ź ŕ ď ś ń ľ ť
-ŝ c u k e n g š y z h ê
- f î v a p r o l d ž ō
-  ā č s m i t j b ū
-```
-
-[ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «**Р 2б**»
-
-```
-ê c u k e n g š y z h
- f î v a p r o l d ž ō
-  ā č s m i t j b ū
-```
-  
-</details>
-
 ?**Ō ō** -> **Ë ë**, **Ē ē**
 
 #### Сопоставление букв кириллицы и латиниц
@@ -391,7 +344,7 @@
 <table>
 
 ### Разное
-
+	
 #### Частотность
  <details>
   <summary>Приблизительная частотность букв Р 8</summary>
@@ -435,6 +388,53 @@ f	31	0.169
 
 </details>
 
+Примеры раскладок клавиатуры:  
+[SCUKE4 (ЩЦУКЕ4)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE4.klc) «**Р 8**»
+
+```
+ħ c u k e n g š j z h ě
+ f y v a p r o l d ž ō
+  ā č s m i t ì b ū
+```
+
+<details>
+  <summary>другие</summary>
+  
+[SCUKEN (ЩЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKEN.klc) «**Р 2в**»
+
+```
+ŝ c u k e n g š y z x ê
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
+ 
+[SCUKE2 (ЩЦУКЕ2)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE2.klc) «**Р 2ва/б**»
+
+```
+ŝ c u k e n g š y z h ê
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
+
+[SCUKE3 (ЩЦУКЕ3)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE3.klc) «**Р 2ва/ба**»
+
+```
+  ź ŕ ď ś ń ľ ť
+ŝ c u k e n g š y z h ê
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
+
+[ECUKEN (ЭЦУКЕН)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuECUKEN.klc) «**Р 2б**»
+
+```
+ê c u k e n g š y z h
+ f î v a p r o l d ž ō
+  ā č s m i t j b ū
+```
+  
+</details>
+	
 #### Раскладка клавиатуры
 [Русская (машинопись)](https://ru.wikipedia.org/wiki/%D0%99%D0%A6%D0%A3%D0%9A%D0%95%D0%9D#%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F_(%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D1%8C))
 
