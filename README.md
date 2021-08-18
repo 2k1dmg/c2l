@@ -390,8 +390,7 @@
    <tbody>
 <table>
 
-![ASCII 6](files/ascii6.png?raw=true "ASCII 6 / Шрифт: Learning Curve BV")
-*ASCII 6*
+### Разное
 
 #### Частотность
  <details>
