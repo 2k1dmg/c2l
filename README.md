@@ -343,7 +343,7 @@
    <tbody>
 <table>
 
-### Разный код
+### Тест
 
 ```javascript
 'Р 8.2+ (жчшщь-ёюяь)': function(text) {
