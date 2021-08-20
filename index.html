@@ -884,8 +884,18 @@ var translitWord = {
 	.replace(/([жчшщ])([ёюяь])/g, function(found,p1,p2,offset,s) {
 		return p1+['o','u','a','']['ёюяь'.indexOf(p2)];
 	})
+	/*
 	.replace(/([еёюяэоуаиы])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
+	})*/
+	.replace(/([еёюяэоуаиы])([еёюяэ]+)/g, function(found,p1,p2,offset,s) {
+		var res = p2;
+		while(/[еёюяэ]/.test(res)){
+			res = res.replace(/[еёюяэ]/g, function(f) {
+				return 'eōūāě'['еёюяэ'.indexOf(f)];
+			});
+		}
+		return p1 + res;
 	})
 	.replace(/([бвгдзклмнпрстфхжцчшщйь])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+'eōūāě'['еёюяэ'.indexOf(p2)];
