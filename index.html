@@ -1202,6 +1202,11 @@ function initpage() {
 		translit();
 	};
 
+	intext.spellcheck = false;
+	spellchecking.onchange = function(value) {
+		intext.spellcheck = !intext.spellcheck;
+	};
+
 	intext.value = initPageText;
 	translit();
 }
@@ -1378,6 +1383,9 @@ function doCopyText() {
 	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
 	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<input type="button" title="Без грависа" value="`" onclick="outtext.innerText = outtext.innerText.replace(/\u0060+/g,'');">
+	<br />
+	<input type="checkbox" id="spellchecking">
+	<label for="spellchecking">Правописание</label>
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
