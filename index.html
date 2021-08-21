@@ -1384,8 +1384,8 @@ function doCopyText() {
 	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
 	<input type="button" title="Без грависа" value="`" onclick="outtext.innerText = outtext.innerText.replace(/\u0060+/g,'');">
 	<br />
-	<input type="checkbox" id="spellchecking">
 	<label for="spellchecking">Правописание</label>
+	<input type="checkbox" id="spellchecking">
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
