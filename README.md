@@ -410,6 +410,13 @@ f	31	0.169
   ā č s m i t ì b ū
 ```
 
+OCUKEN «**Р 8.3**»
+```
+ō c u k e n g š j z h 
+ f y v a p r o l d ž ě
+  ā č s m i t ì b ū
+```
+	
 <details>
   <summary>другие</summary>
   
