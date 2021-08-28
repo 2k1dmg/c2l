@@ -169,7 +169,7 @@
          <td>Č</td>
          <td>Š</td>
          <td>Ħ</td>
-         <td>-</td>
+         <td>Ĵ</td>
          <td>Y</td>
          <td>Ì</td>
          <td>E/Ě</td>
