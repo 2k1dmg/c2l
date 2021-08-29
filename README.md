@@ -280,7 +280,7 @@
          <td>-</td>
          <td>Y</td>
          <td>I/E</td>
-         <td>E/'E</td>
+         <td>E/EU</td>
          <td>YU/IU</td>
          <td>YA/IA</td>
       </tr>
