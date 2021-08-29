@@ -204,7 +204,7 @@
          <td>C</td>
          <td>CH</td>
          <td>SH</td>
-         <td>SCH</td>
+         <td>SHCH</td>
          <td>-</td>
          <td>Y</td>
          <td>-</td>
@@ -276,7 +276,7 @@
          <td>C/TZ</td>
          <td>CH</td>
          <td>SH</td>
-         <td>SHI</td>
+         <td>SCH</td>
          <td>-</td>
          <td>Y</td>
          <td>I/E</td>
