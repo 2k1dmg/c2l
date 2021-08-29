@@ -643,7 +643,7 @@ var translitWord = {
 	//.replace(/е$/g, 'ew')
 	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
-		return p1+['e','yo','yu','ya','e\'']['еёюяэ'.indexOf(p2)];
+		return p1+['e','yo','yu','ya','eu']['еёюяэ'.indexOf(p2)];
 	})
 	.replace(/(ы)([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','io','iu','ia','e\'']['еёюяэ'.indexOf(p2)];
