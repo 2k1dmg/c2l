@@ -276,7 +276,7 @@
          <td>C/TZ</td>
          <td>CH</td>
          <td>SH</td>
-         <td>SC</td>
+         <td>SHI</td>
          <td>-</td>
          <td>Y</td>
          <td>I/E</td>
