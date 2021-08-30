@@ -276,7 +276,7 @@
          <td>C</td>
          <td>CH</td>
          <td>SH</td>
-         <td>SCH</td>
+         <td>SHH</td>
          <td>-</td>
          <td>Y</td>
          <td>I/E</td>
