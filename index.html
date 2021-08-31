@@ -705,7 +705,7 @@ var translitWord = {
 'Р 2 ASCII 8.3 (без ъ и щ)': function(text) {
 	return text
 	.replace(/(щ)([иеёюяьоуа])/g, function(found,p1,p2,offset,s) {
-		return 'sh'+['i','e','io','iu','ia','h','yo','yu','ya']['иеёюяьоуа'.indexOf(p2)];
+		return 'sh'+['i','e','yo','yu','ya','h','io','iu','ia']['иеёюяьоуа'.indexOf(p2)];
 	})
 	.replace(/([жчшщ]ь)([ие])/g, function(found,p1,p2,offset,s) {
 		return p1+'y'+'ie'['ие'.indexOf(p2)];
