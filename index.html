@@ -600,6 +600,7 @@ var translitWord = {
 	.replace(/([ъь])([оуаыиэ])/g, function(found,p1,p2,offset,s) {
 		return ['\'','y']['ъь'.indexOf(p1)]+'ouayie'['оуаыиэ'.indexOf(p2)];
 	})
+	.replace(/кс/g, 'x')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','kh','c','ch','sh','shch','','y','','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
@@ -668,6 +669,7 @@ var translitWord = {
 	/*.replace(/([бвгджзклмнпрстфхцчшщйь])([хц])/g, function(found,p1,p2,offset,s) {
 		return p1+['kh','tz']['хц'.indexOf(p2)];
 	})*/
+	.replace(/кс/g, 'x')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','ch','sh','shh','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
@@ -1199,7 +1201,9 @@ var initPageText = `Съешь же ещё этих мягких француз�
 
 ещё лучших хочешь веснушчатость
 
-сзади сцена`;
+сзади сцена
+
+такси`;
 	
 var timeoutID;
 function initpage() {
