@@ -729,6 +729,10 @@ var translitWord = {
 	
 	.replace(/ши/g, 'shy')
 	
+	.replace(/кс/g, 'x')
+	.replace(/дж/g, 'j')
+	.replace(/([еёюяэоуа])й(.+)/g, '$1i$2')
+	.replace(/ый/g, 'iuy')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','ch','sh','shi','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
