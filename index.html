@@ -714,6 +714,7 @@ var translitWord = {
 		return p1+['o','u','a','']['ёюяь'.indexOf(p2)];
 	})
 	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
+	.replace(/ше/g, 'sheu')
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya','eu']['еёюяэ'.indexOf(p2)];
 	})
