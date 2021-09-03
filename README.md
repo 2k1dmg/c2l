@@ -444,6 +444,14 @@ f	31	0.169
   ā č s m i t ì b ū
 ```
 
+[Русская (машинопись) SCUKEN](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKENtw.klc) «**Р 8**»
+```
+| № - / " : , . _ ? % ! ;
+  ħ c u k e n g š j z h '
+   f y v a p r o l d ž ō )
+    ā č s m i t ì b ū ě
+```	
+
 OCUKEN «**Р 8.3**»
 ```
 ō c u k e n g š j z h 
