@@ -448,8 +448,8 @@ f	31	0.169
 ```
 | № - / " : , . _ ? % ! ;
   ħ c u k e n g š j z h '
-   f y v a p r o l d ž ō )
-    ā č s m i t ì b ū ě
+   f y v a p r o l d ž ě )
+    ā č s m i t ì b ū ō
 ```	
 
 OCUKEN «**Р 8.3**»
