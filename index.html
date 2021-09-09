@@ -582,6 +582,7 @@ var translitWord = {
 	.replace(/([жчшщ])([ёюяь])/g, function(found,p1,p2,offset,s) {
 		return p1+['o','u','a','']['ёюяь'.indexOf(p2)];
 	})
+	.replace(/([эоуаеёюя])й(.+)/g, '$1i$2')
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюя])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya']['еёюя'.indexOf(p2)];
 	})
@@ -602,7 +603,7 @@ var translitWord = {
 	})
 	.replace(/кс/g, 'x')
 	.replace(/дж/g, 'j')
-	.replace(/([эоуа])й(.+)/g, '$1i$2')
+	//.replace(/([эоуа])й(.+)/g, '$1i$2')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','kh','c','ch','sh','shch','','y','','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
@@ -645,6 +646,7 @@ var translitWord = {
 	})
 	//.replace(/е$/g, 'ew')
 	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
+	.replace(/([эоуаеёюя])й(.+)/g, '$1i$2')
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya','eu']['еёюяэ'.indexOf(p2)];
 	})
@@ -673,7 +675,7 @@ var translitWord = {
 	})*/
 	.replace(/кс/g, 'x')
 	.replace(/дж/g, 'j')
-	.replace(/([эоуа])й(.+)/g, '$1i$2')
+	//.replace(/([эоуа])й(.+)/g, '$1i$2')
 	.replace(/ый/g, 'iuy')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','ch','sh','shh','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
@@ -715,6 +717,7 @@ var translitWord = {
 	})
 	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
 	.replace(/ше/g, 'sheu')
+	.replace(/([эоуаеёюя])й(.+)/g, '$1i$2')
 	.replace(/([бвгдзклмнпрстфхжцчшщи])([еёюяэ])/g, function(found,p1,p2,offset,s) {
 		return p1+['e','yo','yu','ya','eu']['еёюяэ'.indexOf(p2)];
 	})
@@ -735,7 +738,7 @@ var translitWord = {
 	
 	.replace(/кс/g, 'x')
 	.replace(/дж/g, 'j')
-	.replace(/([эоуа])й(.+)/g, '$1i$2')
+	//.replace(/([эоуа])й(.+)/g, '$1i$2')
 	.replace(/ый/g, 'iuy')
 	.replace(/[а-яё]/g, function(found,offset,s) {
 		return ['a','b','v','g','d','ye','yo','zh','z','i','y','k','l','m','n','o','p','r','s','t','u','f','h','c','ch','sh','shh','','y','i','e','yu','ya']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
@@ -1200,7 +1203,7 @@ var initPageText = `Съешь же ещё этих мягких француз�
 
 а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я
 
-есть это мэр сейчас
+есть это мэр лей лейка
 
 Вьетнам бельё вьюга альянс
 
