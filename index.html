@@ -1449,8 +1449,9 @@ function doCopyText() {
 	<input type="button" title="Без диакритики" value="Ë→E" onclick="outtext.innerText = outtext.innerText.normalize('NFD').replace(/\p{Diacritic}/gu,'');">
 	<input type="button" title="URL-ссылка" value="URL" onclick="outtext.innerText = outtext.innerText.replace(/ +/g,'-').toLowerCase().replace(/[^0-9a-z-\u000a]/g,'').replace(/^-+|-+$/gm,'').replace(/-{2,}/g,'-');">
 	<input type="button" title="Латиница в ASCII" value="Latin to ASCII" onclick="outtext.innerText = Diacritics.clean(outtext.innerText);">
-	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02BC]+/g,'');">
-	<input type="button" title="Без ударения" value="ˊ" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
+	<input type="button" title="Без апострофа" value="'" onclick="outtext.innerText = outtext.innerText.replace(/[\u0027\u2019\u02bc]+/g,'');">
+	<input type="button" title="Без ударения" value="´" onclick="outtext.innerText = outtext.innerText.replace(/\u0301+/g,'');">
+	<input type="button" title="Без акута" value="´" onclick="outtext.innerText = outtext.innerText.replace(/[\u00b4\u02ca]+/g,'');">
 	<input type="button" title="Без грависа" value="`" onclick="outtext.innerText = outtext.innerText.replace(/\u0060+/g,'');">
 	<br />
 	<label for="spellchecking">Правописание</label>
