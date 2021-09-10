@@ -447,7 +447,7 @@ f	31	0.169
 [Russkaā (mašinopisì) HCUKEN](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuHCUKENtw.klc) «**Р 8**»
 ```
 | № - / " : , . _ ? % ! ;
-  ħ c u k e n g š j z h '
+  ħ c u k e n g š j z h ĵ
    f y v a p r o l d ž ě )
     ā č s m i t ì b ū ō
 ```	
