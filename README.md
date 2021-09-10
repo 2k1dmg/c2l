@@ -451,7 +451,8 @@ f	31	0.169
    f y v a p r o l d ž ě )
     ā č s m i t ì b ū ō
 ```	
-
+[SCUKE5 (ЩЦУКЕ5)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE5.klc) «**Р 8.4**»
+	
 OCUKEN «**Р 8.3**»
 ```
 ō c u k e n g š j z h 
