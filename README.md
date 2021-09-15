@@ -96,6 +96,15 @@
 
 </details>
 
+<details>
+  <summary>«Р 8.4»</summary>
+
+Тоже самое что и «Р 8.2+», но  
+Без "ō ū ā"  
+Мягкость согласных обозначается буквой "ì"
+
+</details>
+
 #### Письмо от руки
 
 <details> 
@@ -452,6 +461,11 @@ f	31	0.169
     ā č s m i t ì b ū ō
 ```	
 [SCUKE5 (ЩЦУКЕ5)](https://raw.githubusercontent.com/2k1dmg/c2l/main/files/RuSCUKE5.klc) «**Р 8.4**»
+```
+ħ c u k e n g š j z h ĵ
+ f y v a p r o l d ž ě
+  - č s m i t ì b , .
+```
 	
 OCUKEN «**Р 8.3**»
 ```
