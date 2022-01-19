@@ -109,7 +109,7 @@
   <summary>«Р 8.5»</summary>
 
 ? ж - ź, ĝ, j  
-? х - h, x, h/ch, ch 
+? х - h, x
 
 </details>
 
