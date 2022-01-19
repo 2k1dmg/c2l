@@ -105,6 +105,14 @@
 
 </details>
 
+<details>
+  <summary>«Р 8.5»</summary>
+
+? ж - ź, ĝ, j  
+? х - h, x, h/ch, ch 
+
+</details>
+
 #### Письмо от руки
 
 <details> 
