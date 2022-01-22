@@ -116,6 +116,13 @@
 
 </details>
 
+<details>
+  <summary>«Р 2 ASCII 2в+»</summary>
+
+? щ - sx
+
+</details>
+
 #### Письмо от руки
 
 <details> 
