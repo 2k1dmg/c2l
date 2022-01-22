@@ -119,7 +119,7 @@
 <details>
   <summary>«Р 2 ASCII 2в+»</summary>
 
-? щ - sx
+? щ - sx / shh / xh
 
 </details>
 
