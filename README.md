@@ -117,6 +117,17 @@
 </details>
 
 <details>
+  <summary>«Р 8.6»</summary>
+
+ч - c  
+ш - x  
+щ - w  
+ц - q  
+ж - j
+
+</details>
+
+<details>
   <summary>«Р 2 ASCII 2в+»</summary>
 
 ? щ - sx / shh / xh
