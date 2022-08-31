@@ -704,7 +704,6 @@ var translitWord = {
 		return p1+['o','u','a','']['ёюяь'.indexOf(p2)];
 	})
 	*/
-	.replace(/([бвгджзклмнпрстфхцчшщийь])х/g, '$1kh')
 	//.replace(/е$/g, 'ew')
 	.replace(/(и)([юя])$/g, (found,p1,p2) => p1+'ua'['юя'.indexOf(p2)])
 	.replace(/([эоуаеёюя])й(.+)/g, '$1i$2')
@@ -729,6 +728,7 @@ var translitWord = {
 		return ['\'','iy']['ъь'.indexOf(p1)]+'ouayie'['оуаыиэ'.indexOf(p2)];
 	})
 	.replace(/ь$/g, 'e')
+	.replace(/([бвгджзклмнпрстфхцчшщийь])х/g, '$1kh')
 	//.replace(/^э/g, 'e')
 	//.replace(/(с)ц/g, '$1tz')
 	/*.replace(/([бвгджзклмнпрстфхцчшщйь])([хц])/g, function(found,p1,p2,offset,s) {
