@@ -319,6 +319,12 @@ var translitWord = {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ŝ','ĵ','y','ì','ě','ū','ā']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'Т 5.2.1 (й-j, ы-y, х-h, ь-î, ъ-ĵ)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ŝ','ĵ','y','î','ě','ū','ā']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 'Т 5.3 (й-j, ы-y, х-h, ь-ì, ъ-ĵ)': function(text) {
 	return text
 	.replace(/[а-яё]/g, function(found,offset,s) {
