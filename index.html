@@ -1893,7 +1893,7 @@ function doCopyText() {
 	<br />
 	<label for="spellchecking">Правописание</label>
 	<input type="checkbox" id="spellchecking">
-	<input type="button" title="Cyrillic" value="cyr" onclick="intext.value = intext.value.replace(/[^\p{Script=Cyrillic}\s\t\n]+/gu,'');">
+	<input type="button" title="Cyrillic" value="cyr" onclick="intext.value = intext.value.replace(/[^\p{Script=Cyrillic}\s\t\n\u0027\u2019\u02bc,.;:!&"@#$%^*()[]{}-_=+~<>/\\]+/gu,'');">
 	<div id="container">
 		<textarea id="intext"></textarea>
 		<input id="copytext" type="button" value="Скопировать в буфер" onclick="doCopyText();">
