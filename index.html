@@ -1383,11 +1383,11 @@ var translitWord = {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([бвгджзклмнпрстфхцчшщийь])х/g, '$1ch')
-	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
-	.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
+	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćĺńŕśź'['тлнрсз'.indexOf(p1)])
+	.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćĺńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','ìo','ìu','ìa','ê']['еёюяэ'.indexOf(p2)])
-	.replace(/[а-яё]/g, (found) => ['a','b','w','g','d','je','jo','ż','z','i','j','k','ł','m','n','o','p','r','s','t','u','f','h','c','cz','sz','ŝ','ĵ','y','ì','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
+	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','ż','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','c','ç','ş','ŝ','ĵ','y','ì','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'Р 8.2а (й-j, ы-y, х-h/ch, щ-ħ, ъ[оуаыиэ])': function(text) {
 	return text
