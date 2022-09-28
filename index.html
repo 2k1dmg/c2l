@@ -1383,7 +1383,8 @@ var translitWord = {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([бвгджзклмнпрстфхцчшщийь])х/g, '$1ch')
-	.replace(/([тлнрсз])ь/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
+	.replace(/ль/g, 'l')
+	.replace(/([тлнрсз])ь(?![еёюя])g/, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
 	.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/л([еи])/g, (found,p1) => 'l'+'ei'['еи'.indexOf(p1)])
