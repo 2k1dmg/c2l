@@ -1517,7 +1517,7 @@ var translitWord = {
 'Р 8.2+ 5.2б (без жчшщь)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
-	.replace(/ль/g, 'l')
+	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ĵ'+'oua'['оуа'.indexOf(p1)]:''))
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
 	//.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -1534,7 +1534,7 @@ var translitWord = {
 'Р 8.2+ 5.2в (без жчшщь)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
-	.replace(/ль/g, 'l')
+	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ĵ'+'oua'['оуа'.indexOf(p1)]:''))
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
 	//.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -1551,7 +1551,7 @@ var translitWord = {
 'Р 8.2+ 5.2с (без жчшщь)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
-	.replace(/ль/g, 'l')
+	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ĵ'+'oua'['оуа'.indexOf(p1)]:''))
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
 	//.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -1568,7 +1568,7 @@ var translitWord = {
 'Р 8.2+ 5.2д (без жчшщь)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, (found,p1) => ['je','jo','ju','ja']['еёюя'.indexOf(p1)])
-	.replace(/ль/g, 'l')
+	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ĵ'+'oua'['оуа'.indexOf(p1)]:''))
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
 	//.replace(/([тлнрсз])([ёюя])/g, (found,p1,p2) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
