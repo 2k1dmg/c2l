@@ -274,8 +274,8 @@ var translitWord = {
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','oe','ue','ae','we']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийь])х/g, '$1ch')
-	.replace(/ь([еёюя])/g, (found,p1) => 'j'+['e','oe','ue','ae']['еёюя'.indexOf(p1)])
-	.replace(/([аоу])э/g, (found,p1) => 'aou'['аоу'.indexOf(p1)]+'we')
+	.replace(/ь([еёюяауоэи])/g, (found,p1) => 'j'+['e','oe','ue','ae','wa','wu','wo','we','wi']['еёюяауоэи'.indexOf(p1)])
+	.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'we')
 	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','q','c','x','xz','w','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'Т 1 (й-y, ы-ì, ь-j)': function(text) {
