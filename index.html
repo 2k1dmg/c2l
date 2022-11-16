@@ -292,7 +292,7 @@ var translitWord = {
 'ASCII 9 (ъ-8, ь-3)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['e','o','u','a','8e','8o','8o','8a']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['j8e','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['8je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','3o','3u','3a','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
@@ -303,7 +303,7 @@ var translitWord = {
 'ASCII 9а (ъ-8, ь-3)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['e','o','u','a','8e','8o','8o','8a']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['j8e','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['8je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','3o','3u','3a','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
@@ -314,7 +314,7 @@ var translitWord = {
 'ASCII 10 (ъ-8, ь-3)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['e','o','u','a','8e','8o','8o','8a']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['j8e','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['8je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','o3','u3','a3','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
@@ -325,7 +325,7 @@ var translitWord = {
 'ASCII 10а (ъ-8, ь-3)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['e','o','u','a','8e','8o','8o','8a']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['j8e','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['8je','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','o3','u3','a3','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
