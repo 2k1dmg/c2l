@@ -270,7 +270,7 @@ var translitWord = {
 'ASCII 8 (меньше букв)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['e','o','u','a','we','wo','wo','wa']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jwe','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['wje','jo','ju','ja']['еёюя'.indexOf(p1)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','oe','ue','ae','we']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
@@ -281,7 +281,7 @@ var translitWord = {
 'ASCII 8.1 (легче читать)': function(text) {
 	return text
 	.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+['je','jo','ju','ja','we','wo','wo','wa']['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jwe','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['wje','jo','ju','ja']['еёюя'.indexOf(p1)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','io','iu','ia','we']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
