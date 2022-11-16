@@ -286,7 +286,7 @@ var translitWord = {
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','io','iu','ia','we']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
 	.replace(/ь([еёюяауоэиы])/g, (found,p1) => 'j'+['e','io','iu','ia','wa','wu','wo','we','wi','wy']['еёюяауоэиы'.indexOf(p1)])
-	.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'we')
+	//.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'we')
 	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','q','c','x','xz','w','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'ASCII 9 (ъ-8, ь-3)': function(text) {
@@ -297,7 +297,7 @@ var translitWord = {
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','3o','3u','3a','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
 	.replace(/ь([еёюяауоэ])/g, (found,p1) => ['je','3jo','3ju','3ja','38a','38u','38o','38e']['еёюяауоэ'.indexOf(p1)])
-	.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'8e')
+	//.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'8e')
 	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','q','c','x','xz','8','y','3','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'ASCII 9а (ъ-8, ь-3)': function(text) {
@@ -308,7 +308,7 @@ var translitWord = {
 	.replace(/([бвгджзклмнпрстфхцчшщ])([еёюяэ])/g, (found,p1,p2) => p1+['e','3o','3u','3a','8e']['еёюяэ'.indexOf(p2)])
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
 	.replace(/ь([еёюяауоэ])/g, (found,p1) => ['je','3jo','3ju','3ja','38a','38u','38o','38e']['еёюяауоэ'.indexOf(p1)])
-	.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'8e')
+	//.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'8e')
 	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','q','c','x','xz','8','y','3','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'Т 1 (й-y, ы-ì, ь-j)': function(text) {
