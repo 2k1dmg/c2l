@@ -2194,7 +2194,7 @@ var translitWord = {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
 	.replace(/лъ([еэ])/g, (found,p1) => 'ł'+['je','ĵe']['еэ'.indexOf(p1)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jê','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ōūā'['оуа'.indexOf(p1)]:''))
 	//.replace(/ль/g, 'l')
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
@@ -2219,7 +2219,7 @@ var translitWord = {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
 	.replace(/лъ([еэ])/g, (found,p1) => 'ł'+['je','ĵe']['еэ'.indexOf(p1)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jê','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ōūā'['оуа'.indexOf(p1)]:''))
 	//.replace(/ль/g, 'l')
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
@@ -2243,7 +2243,7 @@ var translitWord = {
 'Р 8.2+ 7.4з (без жчшщь, ия-ija, ь-j)': function(text) {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jě','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([тдлнрсз])ь(?![еёюя])/g, (found,p1) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)])
 	//.replace(/([тдлнрсз])([ёюя])/g, (found,p1,p2) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -2260,7 +2260,7 @@ var translitWord = {
 'Р 8.2+ 7.4и (с жчшщь, ия-ija, ь-j)': function(text) {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jě','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([тдлнрсз])ь(?![еёюя])/g, (found,p1) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)])
 	//.replace(/([тдлнрсз])([ёюя])/g, (found,p1,p2) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -2278,7 +2278,7 @@ var translitWord = {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
 	.replace(/лъ([еэ])/g, (found,p1) => 'ł'+['je','ĵe']['еэ'.indexOf(p1)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jê','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ōūā'['оуа'.indexOf(p1)]:''))
 	//.replace(/ль/g, 'l')
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
@@ -2303,7 +2303,7 @@ var translitWord = {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
 	.replace(/лъ([еэ])/g, (found,p1) => 'ł'+['je','ĵe']['еэ'.indexOf(p1)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jê','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/ль([оуа])?/g, (found,p1) => 'l'+(p1?'ōūā'['оуа'.indexOf(p1)]:''))
 	//.replace(/ль/g, 'l')
 	.replace(/([тлнрсз])ь(?![еёюя])/g, (found,p1) => 'ćlńŕśź'['тлнрсз'.indexOf(p1)])
@@ -2327,7 +2327,7 @@ var translitWord = {
 'Р 8.2+ 8.4з (без жчшщь, ия-ija, ь-j)': function(text) {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jě','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([тдлнрсз])ь(?![еёюя])/g, (found,p1) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)])
 	//.replace(/([тдлнрсз])([ёюя])/g, (found,p1,p2) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
@@ -2344,7 +2344,7 @@ var translitWord = {
 'Р 8.2+ 8.4и (с жчшщь, ия-ija, ь-j)': function(text) {
 	return text
 	//.replace(/([ыи])([еёюяэоуа])/g, (found,p1,p2) => p1+'eouaèōūā'['еёюяэоуа'.indexOf(p2)])
-	.replace(/ъ([еёюя])/g, (found,p1) => ['jě','jo','ju','ja']['еёюя'.indexOf(p1)])
+	.replace(/ъ([еёюя])/g, (found,p1) => ['jè','jo','ju','ja']['еёюя'.indexOf(p1)])
 	.replace(/([тдлнрсз])ь(?![еёюя])/g, (found,p1) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)])
 	//.replace(/([тдлнрсз])([ёюя])/g, (found,p1,p2) => 'ťďĺńŕśź'['тдлнрсз'.indexOf(p1)]+'oua'['ёюя'.indexOf(p2)])
 	//.replace(/([жчшщ])(ь)?([иеёюя])?/g, (found,p1,p2,p3) => p1+(p2=='ь'&&p3?'j':'')+(p3?'ieoua'['иеёюя'.indexOf(p3)]:''))
