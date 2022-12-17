@@ -306,6 +306,7 @@ var translitWord = {
 	.replace(/([бвгджзклмнпрстфхцчшщийьi])х/g, '$1ch')
 	.replace(/ь([еёюяауоэ])/g, (found,p1) => 'j'+['e','oe','ue','ae','wa','wu','wo','we']['еёюяауоэ'.indexOf(p1)])
 	.replace(/([ауо])э/g, (found,p1) => 'auo'['ауо'.indexOf(p1)]+'we')
+	.replace(/сз/g, 'swz')
 	.replace(/[а-яё]/g, (found) => ['a','b','v','g','d','je','jo','gz','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','c','cz','sz','szh','w','y','j','e','ju','ja']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)]);
 },
 'ASCII 8.1 (легче читать)': function(text) {
