@@ -2779,6 +2779,11 @@ function initpage() {
 		elm.innerHTML = '<br>'+e[0] +': "'+ e[1].replace(/ [(].+/g,'')+'"';	
 		document.body.appendChild(elm);
 	});
+	
+	var elm = document.createElement('span');
+	elm.innerHTML = '<br><br>В вариантах с "ĝ-ъ" и "j-ь" также есть в алфавите и может использоваться "ĵ" для "ь" при необходимости.';	
+	document.body.appendChild(elm);
+	
 	getTranslitWord = Object.values(translitWord)[0];
 	
 	for(let key in translitWord)
