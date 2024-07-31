@@ -480,6 +480,30 @@ var translitWord = {
 		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','c','č','š','ŝ','ĝ','y','ĵ','è','ü','ä']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
 	});
 },
+'Т 10 (ьъ-ĵĝ, жчш-żсx, эеёюя-ęeëüä)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ż','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','ç','c','x','ş','ĝ','y','ĵ','ę','ü','ä']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'Т 10.1 (ьъ-ĵĝ, жчш-żсx, эеёюя-ęeëūā)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ż','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','ç','c','x','ş','ĝ','y','ĵ','ę','ū','ā']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'Т 10.2 (ьъ-ĵĝ, жчш-żсš, эеёюя-ęeëūā)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ż','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','ç','c','š','ş','ĝ','y','ĵ','ę','ū','ā']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
+'Т 10.3 (ьъ-ĵĝ, жчш-žčš, эеёюя-ęeëūā)': function(text) {
+	return text
+	.replace(/[а-яё]/g, function(found,offset,s) {
+		return ['a','b','v','g','d','e','ë','ž','z','i','j','k','l','m','n','o','p','r','s','t','u','f','h','ç','č','š','ş','ĝ','y','ĵ','ę','ū','ā']['абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.indexOf(found)];
+	});
+},
 'Р 1 (й-y, ы-ì, х-x)': function(text) {
 	return text
 	.replace(/ъ([еёюя])/g, function(found,p1,offset,s) {
